@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using CashFlow.Api.Models;
+using CashFlow.Application.UseCases.Expenses.Register;
 using CashFlow.Communication.Requests;
 
 namespace CashFlow.Api.Controllers;
@@ -16,6 +17,9 @@ public class ExpensesController : ControllerBase
    [ProducesResponseType(StatusCodes.Status400BadRequest)]
    public IActionResult Register([FromBody] RequestExpenseJson request)
    {
-      return Created();
+      var useCase = new RegisterExpenseUseCase();
+      var response = useCase.Execute(request);
+      
+      return Created(string.Empty, response);
    }
 }
