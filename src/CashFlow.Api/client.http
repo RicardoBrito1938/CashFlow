@@ -1,0 +1,8 @@
+POST http://localhost:5107/api/expenses
+Content-Type: application/json
+
+{
+  "description": "Lunch",
+  "amount": 15.75,
+  "date": "2024-05-20T12:00:00"
+}

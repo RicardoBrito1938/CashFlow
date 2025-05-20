@@ -42,6 +42,3 @@
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/obj/Debug/net9.0/CashFlow.Api.pdb
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/obj/Debug/net9.0/CashFlow.Api.genruntimeconfig.cache
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/obj/Debug/net9.0/ref/CashFlow.Api.dll
-/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
-/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
-/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
