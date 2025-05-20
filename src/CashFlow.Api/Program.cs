@@ -4,10 +4,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// Add Swagger services
-builder.Services.AddSwaggerGen(c =>
+// Add OpenAPI for .NET 9
+builder.Services.AddOpenApi(options => 
 {
-    c.SwaggerDoc("v1", new() { Title = "CashFlow API", Version = "v1" });
+    options.Title = "CashFlow API";
+    options.Description = "API for managing cash flow";
 });
 
 var app = builder.Build();
@@ -15,12 +16,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "CashFlow API v1");
-        c.RoutePrefix = string.Empty; // Set the Swagger UI at the root
-    });
+    // Map OpenAPI endpoints with default Swagger UI
+    app.MapOpenApi();
 }
 
 app.UseHttpsRedirection();
