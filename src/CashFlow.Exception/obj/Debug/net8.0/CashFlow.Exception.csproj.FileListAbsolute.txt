@@ -1,0 +1,12 @@
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Exception/bin/Debug/net8.0/CashFlow.Exception.deps.json
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Exception/bin/Debug/net8.0/CashFlow.Exception.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Exception/bin/Debug/net8.0/CashFlow.Exception.pdb
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Exception/obj/Debug/net8.0/CashFlow.Exception.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Exception/obj/Debug/net8.0/CashFlow.Exception.AssemblyInfoInputs.cache
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Exception/obj/Debug/net8.0/CashFlow.Exception.AssemblyInfo.cs
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Exception/obj/Debug/net8.0/CashFlow.Exception.csproj.CoreCompileInputs.cache
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Exception/obj/Debug/net8.0/CashFlow.Exception.sourcelink.json
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Exception/obj/Debug/net8.0/CashFlow.Exception.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Exception/obj/Debug/net8.0/refint/CashFlow.Exception.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Exception/obj/Debug/net8.0/CashFlow.Exception.pdb
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Exception/obj/Debug/net8.0/ref/CashFlow.Exception.dll

@@ -1,0 +1,16 @@
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/bin/Debug/net8.0/CashFlow.Infra.deps.json
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/bin/Debug/net8.0/CashFlow.Infra.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/bin/Debug/net8.0/CashFlow.Infra.pdb
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/bin/Debug/net8.0/CashFlow.Domain.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/bin/Debug/net8.0/CashFlow.Domain.pdb
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/obj/Debug/net8.0/CashFlow.Infra.csproj.AssemblyReference.cache
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/obj/Debug/net8.0/CashFlow.Infra.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/obj/Debug/net8.0/CashFlow.Infra.AssemblyInfoInputs.cache
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/obj/Debug/net8.0/CashFlow.Infra.AssemblyInfo.cs
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/obj/Debug/net8.0/CashFlow.Infra.csproj.CoreCompileInputs.cache
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/obj/Debug/net8.0/CashFlow.Infra.sourcelink.json
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/obj/Debug/net8.0/CashFlow.E645D5FF.Up2Date
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/obj/Debug/net8.0/CashFlow.Infra.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/obj/Debug/net8.0/refint/CashFlow.Infra.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/obj/Debug/net8.0/CashFlow.Infra.pdb
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/obj/Debug/net8.0/ref/CashFlow.Infra.dll
