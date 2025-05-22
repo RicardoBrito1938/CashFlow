@@ -3,6 +3,7 @@ using CashFlow.Api.Models;
 using CashFlow.Application.UseCases.Expenses.Register;
 using CashFlow.Communication.Requests;
 using CashFlow.Communication.Responses;
+using CashFlow.Exception.ExceptionsBase;
 
 namespace CashFlow.Api.Controllers;
 
@@ -25,20 +26,16 @@ public class ExpensesController : ControllerBase
 
          return Created(string.Empty, response);
       }
-      catch (ArgumentException e)
+      catch (ErrorOnValidationException e)
       {
-         var errorResponse = new ResponseErrorJson()
-         {
-            ErrorMessage = e.Message
-         };
+         var errorResponse = new ResponseErrorJson(e.Errors);
+         
          return BadRequest(errorResponse);
       }
-      catch (Exception e)
+      catch 
       {
-         var errorResponse = new ResponseErrorJson()
-         {
-            ErrorMessage = "An unexpected error occurred. Please try again later."
-         };
+         var errorResponse = new ResponseErrorJson("An unexpected error occurred.");
+        
          return StatusCode(StatusCodes.Status500InternalServerError, errorResponse);
       }
    }
