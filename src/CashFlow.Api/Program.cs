@@ -1,5 +1,6 @@
 using System.Reflection;
 using CashFlow.Api.Filters;
+using CashFlow.Api.Middleware;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,6 +33,7 @@ builder.Services.AddSwaggerGen(options =>
 
 var app = builder.Build();
 
+
 // Enable Swagger in development
 if (app.Environment.IsDevelopment())
 {
@@ -43,6 +45,8 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = string.Empty;
     });
 }
+
+app.UseMiddleware<CultureMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseRouting();
