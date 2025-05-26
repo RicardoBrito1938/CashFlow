@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zXpt7WGSZco=",
+  "success": true,
+  "projectFilePath": "/Users/ricardobrito/Documents/study/CashFlow/CashFlow.APi/CashFlow.APi.csproj",
+  "expectedPackageFiles": [
+    "/Users/ricardobrito/.nuget/packages/microsoft.aspnetcore.openapi/9.0.2/microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
+    "/Users/ricardobrito/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
