@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zQjo3hHMTk8=",
+  "dgSpecHash": "I6msMYtlKMU=",
   "success": true,
   "projectFilePath": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Communication/CashFlow.Communication.csproj",
-  "expectedPackageFiles": [
-    "/Users/ricardobrito/.nuget/packages/microsoft.netcore.app.ref/8.0.16/microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
-    "/Users/ricardobrito/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.16/microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

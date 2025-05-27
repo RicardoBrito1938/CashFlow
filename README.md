@@ -1,7 +1,14 @@
 CashFlow Solution
 This project follows a clean-architecture layout for .NET and was generated entirely with the .NET CLI.
 It contains separate projects for API, Application logic, Domain, Infrastructure, Communication, and Exception handling.
+# CashFlow Application
 
+## Database Setup
+
+To create the MySQL database for this application, run the following Docker command:
+
+```bash
+docker run --name cashflow -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 -d mysql:latest
 📁 Solution structure
 CashFlow
 ├── src/

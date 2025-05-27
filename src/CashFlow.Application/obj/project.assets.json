@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
+    "net9.0": {
       "FluentValidation/12.0.0": {
         "type": "package",
         "compile": {
@@ -17,7 +17,7 @@
       },
       "CashFlow.Communication/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
           "bin/placeholder/CashFlow.Communication.dll": {}
         },
@@ -27,7 +27,7 @@
       },
       "CashFlow.Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
           "bin/placeholder/CashFlow.Domain.dll": {}
         },
@@ -37,7 +37,7 @@
       },
       "CashFlow.Exception/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
           "bin/placeholder/CashFlow.Exception.dll": {}
         },
@@ -80,7 +80,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0": [
+    "net9.0": [
       "CashFlow.Communication >= 1.0.0",
       "CashFlow.Domain >= 1.0.0",
       "CashFlow.Exception >= 1.0.0",
@@ -103,14 +103,14 @@
         "/Users/ricardobrito/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net8.0"
+        "net9.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "projectReferences": {
             "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Communication/CashFlow.Communication.csproj": {
               "projectPath": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Communication/CashFlow.Communication.csproj"
@@ -137,8 +137,8 @@
       "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
-      "net8.0": {
-        "targetAlias": "net8.0",
+      "net9.0": {
+        "targetAlias": "net9.0",
         "dependencies": {
           "FluentValidation": {
             "target": "Package",
@@ -156,16 +156,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.16, 8.0.16]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.16, 8.0.16]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

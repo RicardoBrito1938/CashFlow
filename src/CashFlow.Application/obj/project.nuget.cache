@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "o37Bu2P2bQU=",
+  "dgSpecHash": "eeRu8X7Gbp0=",
   "success": true,
   "projectFilePath": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Application/CashFlow.Application.csproj",
   "expectedPackageFiles": [
-    "/Users/ricardobrito/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512",
-    "/Users/ricardobrito/.nuget/packages/microsoft.netcore.app.ref/8.0.16/microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
-    "/Users/ricardobrito/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.16/microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512"
+    "/Users/ricardobrito/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512"
   ],
   "logs": []
 }
