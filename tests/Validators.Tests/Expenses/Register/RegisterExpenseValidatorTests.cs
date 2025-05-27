@@ -67,7 +67,7 @@ public class RegisterExpenseValidatorTests
     {
         var validator = new RegisterExpenseValidator();
         var request = RequestExpenseJsonBuilder.Build();
-        request.PaymentType = (PaymentsType)999; // Invalid enum value
+        request.PaymentType = (PaymentType)999; // Invalid enum value
         
         var result = validator.Validate(request);
         
