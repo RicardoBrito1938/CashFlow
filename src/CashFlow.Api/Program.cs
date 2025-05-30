@@ -1,3 +1,4 @@
+using CashFlow.Api;
 using CashFlow.Api.Filters;
 using CashFlow.Api.Middleware;
 using CashFlow.Infra;
@@ -11,6 +12,7 @@ builder.Services.AddMvc(options =>
     options.Filters.Add<ExceptionFilter>()
 );
 builder.Services.AddInfrastructure();
+builder.Services.AddApplication();
 
 builder.Services.AddOpenApi();
 

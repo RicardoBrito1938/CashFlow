@@ -23,9 +23,6 @@
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Microsoft.OpenApi.dll
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/MySqlConnector.dll
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Pomelo.EntityFrameworkCore.MySql.dll
-/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
-/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
-/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/CashFlow.Application.dll
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/CashFlow.Communication.dll
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/CashFlow.Domain.dll
