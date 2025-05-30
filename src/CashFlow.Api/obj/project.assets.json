@@ -321,6 +321,22 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.4.4": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Swashbuckle.AspNetCore/8.1.2": {
         "type": "package",
         "dependencies": {
@@ -1150,6 +1166,23 @@
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
+    "Scalar.AspNetCore/2.4.4": {
+      "sha512": "EH8AwPuiHK49LqUfmSSgzd8XTTqtDzV/F+3w6CVOhSaU3ly1LRUszcZXMG2GTUjKh1TtyTbsBbwx1sRTnQnsFQ==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.4.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.4.4.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/8.1.2": {
       "sha512": "GcfwU8slhnC7ZKOGVkGheuyGgwIpqeLI11mtSO5P6cm1ej7U3LF83Okt9Jp76ar2zI7herN2yLcvIgzP63wgPQ==",
       "type": "package",
@@ -1260,6 +1293,7 @@
       "CashFlow.Exception >= 1.0.0",
       "CashFlow.Infra >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.2",
+      "Scalar.AspNetCore >= 2.4.4",
       "Swashbuckle.AspNetCore >= 8.1.2"
     ]
   },
@@ -1322,6 +1356,10 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[9.0.2, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.4.4, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
