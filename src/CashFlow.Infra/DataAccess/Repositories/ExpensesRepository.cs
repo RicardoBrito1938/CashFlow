@@ -3,11 +3,10 @@ using CashFlow.Domain.Repositories.Expenses;
 
 namespace CashFlow.Infra.DataAccess.Repositories;
 
-internal class ExpensesRepository: IExpensesRepositories
+internal class ExpensesRepository(CashFlowDbContext dbContext) : IExpensesRepositories
 {
     public void Add(Expense expense)
     {
-        var dbContext = new CashFlowDbContext();
         dbContext.Expenses.Add(expense);
         dbContext.SaveChanges();
     }
