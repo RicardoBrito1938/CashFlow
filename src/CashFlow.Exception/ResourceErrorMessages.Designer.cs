@@ -74,5 +74,11 @@ namespace CashFlow.Exception {
                 return ResourceManager.GetString("INVALID_PAYMENT", resourceCulture);
             }
         }
+        
+        public static string NOT_FOUND {
+            get {
+                return ResourceManager.GetString("NOT_FOUND", resourceCulture);
+            }
+        }
     }
 }

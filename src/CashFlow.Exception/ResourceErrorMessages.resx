@@ -36,4 +36,7 @@
     <data name="INVALID_PAYMENT" xml:space="preserve">
         <value>The payment type is invalid</value>
     </data>
+    <data name="NOT_FOUND" xml:space="preserve">
+        <value>Not found</value>
+    </data>
 </root>
