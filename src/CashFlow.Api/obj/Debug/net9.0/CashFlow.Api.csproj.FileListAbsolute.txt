@@ -55,3 +55,4 @@
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/obj/Debug/net9.0/CashFlow.Api.genruntimeconfig.cache
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/obj/Debug/net9.0/ref/CashFlow.Api.dll
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Scalar.AspNetCore.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/AutoMapper.dll
