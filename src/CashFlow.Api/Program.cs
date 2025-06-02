@@ -1,6 +1,7 @@
 using CashFlow.Api;
 using CashFlow.Api.Filters;
 using CashFlow.Api.Middleware;
+using CashFlow.Application;
 using CashFlow.Infra;
 using Scalar.AspNetCore;
 
