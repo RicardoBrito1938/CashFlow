@@ -1,6 +1,6 @@
 namespace CashFlow.Communication.Responses;
 
-public class ResponseExpenseJson
+public class ResponseExpensesJson
 {
     public List<ResponseShortExpenseJson> Expenses { get; set; } = [];
 }
