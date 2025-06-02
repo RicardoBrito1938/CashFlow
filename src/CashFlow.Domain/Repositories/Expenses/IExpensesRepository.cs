@@ -2,7 +2,7 @@ using CashFlow.Domain.Entities;
 
 namespace CashFlow.Domain.Repositories.Expenses;
 
-public interface IExpensesRepositories
+public interface IExpensesRepository
 {
     Task Add(Expense expense);
 }
