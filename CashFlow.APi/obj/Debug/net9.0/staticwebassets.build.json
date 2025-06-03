@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "7WwC6N8c+f4YK4vpYTyl2fyDozTsWd05h+o78LUTFcc=",
-  "Source": "CashFlow.APi",
-  "BasePath": "_content/CashFlow.APi",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"7WwC6N8c+f4YK4vpYTyl2fyDozTsWd05h+o78LUTFcc=","Source":"CashFlow.APi","BasePath":"_content/CashFlow.APi","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

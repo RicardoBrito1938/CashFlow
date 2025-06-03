@@ -7,12 +7,12 @@ using Shouldly;
 
 namespace Validators.Tests.Expenses.Register;
 
-public class RegisterExpenseValidatorTests
+public class ExpenseValidatorTests
 {
     [Fact]
     public void Success()
     {
-        var validator = new RegisterExpenseValidator();
+        var validator = new ExpenseValidator();
         var request =  RequestExpenseJsonBuilder.Build();
         
         var result = validator.Validate(request);
@@ -23,7 +23,7 @@ public class RegisterExpenseValidatorTests
     [Fact]
     public void Error_TitleRequired()
     {
-        var validator = new RegisterExpenseValidator();
+        var validator = new ExpenseValidator();
         var request = RequestExpenseJsonBuilder.Build();
         request.Title = string.Empty;
         
@@ -37,7 +37,7 @@ public class RegisterExpenseValidatorTests
     [Fact]
     public void Error_AmountMustBeGreaterThanZero()
     {
-        var validator = new RegisterExpenseValidator();
+        var validator = new ExpenseValidator();
         var request = RequestExpenseJsonBuilder.Build();
         request.Amount = 0;
         
@@ -51,7 +51,7 @@ public class RegisterExpenseValidatorTests
     [Fact]
     public void Error_DateMustBeLessOrEqualThanToday()
     {
-        var validator = new RegisterExpenseValidator();
+        var validator = new ExpenseValidator();
         var request = RequestExpenseJsonBuilder.Build();
         request.Date = DateTime.UtcNow.AddDays(1);
         
@@ -65,7 +65,7 @@ public class RegisterExpenseValidatorTests
     [Fact]
     public void Error_PaymentTypeMustBeValid()
     {
-        var validator = new RegisterExpenseValidator();
+        var validator = new ExpenseValidator();
         var request = RequestExpenseJsonBuilder.Build();
         request.PaymentType = (PaymentType)999; // Invalid enum value
         
@@ -82,7 +82,7 @@ public class RegisterExpenseValidatorTests
     [InlineData("   ")]
     public void Error_InvalidTitle(string invalidTitle)
     {
-        var validator = new RegisterExpenseValidator();
+        var validator = new ExpenseValidator();
         var request = RequestExpenseJsonBuilder.Build();
         request.Title = invalidTitle;
         

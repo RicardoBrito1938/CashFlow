@@ -24,7 +24,7 @@ public class RegisterExpenseUseCase(IExpensesWriteOnlyRepository repository, IUn
     
     private void Validate(RequestExpenseJson request)
     {
-        var validator = new RegisterExpenseValidator();
+        var validator = new ExpenseValidator();
         var result =  validator.Validate(request);
         if (result.IsValid) return;
         
