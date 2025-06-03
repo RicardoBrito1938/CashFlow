@@ -11,6 +11,18 @@ internal class ExpensesRepository(CashFlowDbContext dbContext) : IExpensesReadOn
        await dbContext.Expenses.AddAsync(expense);
     }
 
+    //Not a fan of this implementation, but it is the simplest way to implement a delete method in EF Core
+    public async Task<bool> Delete(long id)
+    {
+       var result = await dbContext.Expenses.FirstOrDefaultAsync(expense => expense.Id == id);
+         if (result is null)
+         {
+              return false;
+         }
+         dbContext.Expenses.Remove(result);
+         return true;
+    }
+
     public async Task<List<Expense>> GetAll()
     {
         
