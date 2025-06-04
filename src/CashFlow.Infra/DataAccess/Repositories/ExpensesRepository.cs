@@ -38,7 +38,21 @@ internal class ExpensesRepository(CashFlowDbContext dbContext) : IExpensesReadOn
     {
         return await dbContext.Expenses.AsNoTracking().FirstOrDefaultAsync(expense => expense.Id == id);
     }
-    
+
+    public async Task<List<Expense>> FilterByMonth(DateOnly date)
+    {
+        var startDate = new DateTime(date.Year, date.Month,  1).Date;
+        var daysInMonth = DateTime.DaysInMonth(date.Year, date.Month);
+        var endDate = new DateTime(date.Year, date.Month, daysInMonth, 23, 59, 59);
+
+        return await dbContext
+            .Expenses
+            .AsNoTracking()
+            .Where(expense => expense.Date >= startDate && expense.Date <= endDate)
+            .OrderBy(expense => expense.Date)
+            .ToListAsync();
+    }
+
     async Task<Expense?> IExpensesUpdateOnlyRepository.GetById(long id)
     {
         return await dbContext.Expenses.FirstOrDefaultAsync(expense => expense.Id == id);

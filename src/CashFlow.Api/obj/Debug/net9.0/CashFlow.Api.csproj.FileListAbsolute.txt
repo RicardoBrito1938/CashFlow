@@ -56,3 +56,11 @@
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/obj/Debug/net9.0/ref/CashFlow.Api.dll
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Scalar.AspNetCore.dll
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/AutoMapper.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/ClosedXML.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/ClosedXML.Parser.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/DocumentFormat.OpenXml.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/DocumentFormat.OpenXml.Framework.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/ExcelNumberFormat.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/RBush.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/SixLabors.Fonts.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/System.IO.Packaging.dll

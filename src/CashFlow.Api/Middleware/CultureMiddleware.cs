@@ -2,15 +2,10 @@ using System.Globalization;
 
 namespace CashFlow.Api.Middleware;
 
-public class CultureMiddleware
+public class CultureMiddleware(RequestDelegate next)
 {
-    private readonly RequestDelegate _next;
-    
-    public CultureMiddleware(RequestDelegate next)
-    {
-        _next = next ?? throw new ArgumentNullException(nameof(next));
-    }
-    
+    private readonly RequestDelegate _next = next ?? throw new ArgumentNullException(nameof(next));
+
     public async Task Invoke(HttpContext context)
     {
         var supportedCultures = CultureInfo.GetCultures(CultureTypes.AllCultures).ToList();
