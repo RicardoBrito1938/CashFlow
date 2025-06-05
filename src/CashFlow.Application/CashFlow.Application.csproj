@@ -18,4 +18,15 @@
     <PackageReference Include="FluentValidation" Version="12.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="UseCases\Expenses\Reports\Fonts\Raleway-Black.ttf" />
+    <EmbeddedResource Include="UseCases\Expenses\Reports\Fonts\Raleway-Black.ttf" />
+    <None Remove="UseCases\Expenses\Reports\Fonts\Raleway-Regular.ttf" />
+    <EmbeddedResource Include="UseCases\Expenses\Reports\Fonts\Raleway-Regular.ttf" />
+    <None Remove="UseCases\Expenses\Reports\Fonts\WorkSans-Black.ttf" />
+    <EmbeddedResource Include="UseCases\Expenses\Reports\Fonts\WorkSans-Black.ttf" />
+    <None Remove="UseCases\Expenses\Reports\Fonts\WorkSans-Regular.ttf" />
+    <EmbeddedResource Include="UseCases\Expenses\Reports\Fonts\WorkSans-Regular.ttf" />
+  </ItemGroup>
+
 </Project>
