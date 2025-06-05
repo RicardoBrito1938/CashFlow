@@ -15,14 +15,14 @@ public class GenerateExpensesReportPdfUseCase: IGenerateExpensesReportPdfUseCase
     public GenerateExpensesReportPdfUseCase(IExpensesReadOnlyRepository repository)
     {
         _repository = repository;
-        GlobalFontSettings.FontResolver = new ExoticFontsFontResolver();
+        GlobalFontSettings.FontResolver = new ExpensesReportFontResolver();
     }
     public async Task<byte[]> Execute(DateOnly month)
     {
         var expenses = await _repository.FilterByMonth(month);
         if (expenses.Count == 0) return [];
         
-        var document = CreateDocument(month, expenses);
+        var document = CreateDocument(month);
         var page = CreatePage(document);
 
         var paragraph = page.AddParagraph();
@@ -37,7 +37,7 @@ public class GenerateExpensesReportPdfUseCase: IGenerateExpensesReportPdfUseCase
         return RenderDocumentToPdf(document);
     }
     
-    private Document CreateDocument(DateOnly month, IList<Domain.Entities.Expense> expenses)
+    private Document CreateDocument(DateOnly month)
     {
         var document = new Document
         {
