@@ -2,6 +2,7 @@ using CashFlow.Application.UseCases.Expenses.Reports.Pdf.Fonts;
 using CashFlow.Domain.Reports;
 using CashFlow.Domain.Repositories.Expenses;
 using MigraDoc.DocumentObjectModel;
+using MigraDoc.Rendering;
 using PdfSharp.Fonts;
 using PdfSharp.Snippets.Font;
 
@@ -33,7 +34,7 @@ public class GenerateExpensesReportPdfUseCase: IGenerateExpensesReportPdfUseCase
         var totalExpenses = expenses.Sum(expense => expense.Amount);
         paragraph.AddFormattedText($"{totalExpenses} {CURRENCY_SYMBOL}", new Font { Name = FontHelper.WORKSANS_BLACK, Size = 50 });
         
-        return [];
+        return RenderDocumentToPdf(document);
     }
     
     private Document CreateDocument(DateOnly month, IList<Domain.Entities.Expense> expenses)
@@ -64,5 +65,19 @@ public class GenerateExpensesReportPdfUseCase: IGenerateExpensesReportPdfUseCase
         section.PageSetup.BottomMargin = 80;
         
         return section;
+    }
+    
+    private byte[] RenderDocumentToPdf(Document document)
+    {
+        var renderer = new PdfDocumentRenderer
+        {
+            Document = document,
+        };
+        renderer.RenderDocument();
+        
+        using var stream = new MemoryStream();
+        renderer.PdfDocument.Save(stream);
+        
+        return stream.ToArray();
     }
 }
