@@ -98,5 +98,11 @@ namespace CashFlow.Domain.Reports {
                 return ResourceManager.GetString("BANK_TRANSFER", resourceCulture);
             }
         }
+        
+        internal static string EXPENSES_FOR {
+            get {
+                return ResourceManager.GetString("EXPENSES_FOR", resourceCulture);
+            }
+        }
     }
 }
