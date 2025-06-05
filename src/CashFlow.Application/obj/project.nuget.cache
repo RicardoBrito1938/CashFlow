@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bzrad6LZ4OI=",
+  "dgSpecHash": "icvWmzjQncs=",
   "success": true,
   "projectFilePath": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Application/CashFlow.Application.csproj",
   "expectedPackageFiles": [
@@ -11,12 +11,18 @@
     "/Users/ricardobrito/.nuget/packages/documentformat.openxml.framework/3.1.1/documentformat.openxml.framework.3.1.1.nupkg.sha512",
     "/Users/ricardobrito/.nuget/packages/excelnumberformat/1.1.0/excelnumberformat.1.1.0.nupkg.sha512",
     "/Users/ricardobrito/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512",
-    "/Users/ricardobrito/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "/Users/ricardobrito/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "/Users/ricardobrito/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.1/microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "/Users/ricardobrito/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/Users/ricardobrito/.nuget/packages/microsoft.extensions.logging/8.0.1/microsoft.extensions.logging.8.0.1.nupkg.sha512",
+    "/Users/ricardobrito/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/Users/ricardobrito/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
     "/Users/ricardobrito/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "/Users/ricardobrito/.nuget/packages/pdfsharp/6.2.0/pdfsharp.6.2.0.nupkg.sha512",
+    "/Users/ricardobrito/.nuget/packages/pdfsharp-migradoc/6.2.0/pdfsharp-migradoc.6.2.0.nupkg.sha512",
     "/Users/ricardobrito/.nuget/packages/rbush.signed/4.0.0/rbush.signed.4.0.0.nupkg.sha512",
     "/Users/ricardobrito/.nuget/packages/sixlabors.fonts/1.0.0/sixlabors.fonts.1.0.0.nupkg.sha512",
-    "/Users/ricardobrito/.nuget/packages/system.io.packaging/8.0.1/system.io.packaging.8.0.1.nupkg.sha512"
+    "/Users/ricardobrito/.nuget/packages/system.io.packaging/8.0.1/system.io.packaging.8.0.1.nupkg.sha512",
+    "/Users/ricardobrito/.nuget/packages/system.security.cryptography.pkcs/8.0.1/system.security.cryptography.pkcs.8.0.1.nupkg.sha512"
   ],
   "logs": []
 }
