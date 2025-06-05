@@ -7,6 +7,8 @@ namespace CashFlow.Application.UseCases.Expenses.Reports.Excel;
 
 public class GeneratedExpensesReportExcelUseCase(IExpensesReadOnlyRepository repository): IGeneratedExpensesReportExcelUseCase
 {
+    private const string CurrencySymbol = "£";
+    
     public async Task<byte[]> Execute(DateOnly month)
     {
         var expenses = await repository.FilterByMonth(month);
@@ -32,10 +34,13 @@ public class GeneratedExpensesReportExcelUseCase(IExpensesReadOnlyRepository rep
             worksheet.Cell($"C{row}").Value = ConvertPaymentTypeToString(expense.PaymentType);
             worksheet.Cell($"D{row}").Value = expense.Amount;
             worksheet.Cell($"D{row}").Style.Alignment.SetHorizontal(XLAlignmentHorizontalValues.Right);
+            worksheet.Cell($"D{row}").Style.NumberFormat.Format = CurrencySymbol + $"-{CurrencySymbol} #,##0.00";
             worksheet.Cell($"E{row}").Value = expense.Description;
             worksheet.Cell($"E{row}").Style.Alignment.SetHorizontal(XLAlignmentHorizontalValues.Center);
             row++;
         }
+        
+        worksheet.Columns().AdjustToContents();
 
         var file = new MemoryStream();
         workbook.SaveAs(file);
