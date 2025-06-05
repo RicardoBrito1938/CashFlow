@@ -14,18 +14,18 @@ namespace CashFlow.Domain.Reports {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ResourceReportGenerationMessages {
+    internal class ResourceReportGenerationMessages {
         
         private static System.Resources.ResourceManager resourceMan;
         
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        public ResourceReportGenerationMessages() {
+        internal ResourceReportGenerationMessages() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static System.Resources.ResourceManager ResourceManager {
+        internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
                     System.Resources.ResourceManager temp = new System.Resources.ResourceManager("CashFlow.Domain.Reports.ResourceReportGenerationMessages", typeof(ResourceReportGenerationMessages).Assembly);
@@ -36,7 +36,7 @@ namespace CashFlow.Domain.Reports {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static System.Globalization.CultureInfo Culture {
+        internal static System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -45,33 +45,57 @@ namespace CashFlow.Domain.Reports {
             }
         }
         
-        public static string AMOUNT {
+        internal static string AMOUNT {
             get {
                 return ResourceManager.GetString("AMOUNT", resourceCulture);
             }
         }
         
-        public static string DATE {
+        internal static string DATE {
             get {
                 return ResourceManager.GetString("DATE", resourceCulture);
             }
         }
         
-        public static string DESCRIPTION {
+        internal static string DESCRIPTION {
             get {
                 return ResourceManager.GetString("DESCRIPTION", resourceCulture);
             }
         }
         
-        public static string PAYMENT_TYPE {
+        internal static string PAYMENT_TYPE {
             get {
                 return ResourceManager.GetString("PAYMENT_TYPE", resourceCulture);
             }
         }
         
-        public static string TITLE {
+        internal static string TITLE {
             get {
                 return ResourceManager.GetString("TITLE", resourceCulture);
+            }
+        }
+        
+        internal static string CASH {
+            get {
+                return ResourceManager.GetString("CASH", resourceCulture);
+            }
+        }
+        
+        internal static string DEBIT_CARD {
+            get {
+                return ResourceManager.GetString("DEBIT_CARD", resourceCulture);
+            }
+        }
+        
+        internal static string CREDIT_CARD {
+            get {
+                return ResourceManager.GetString("CREDIT_CARD", resourceCulture);
+            }
+        }
+        
+        internal static string BANK_TRANSFER {
+            get {
+                return ResourceManager.GetString("BANK_TRANSFER", resourceCulture);
             }
         }
     }

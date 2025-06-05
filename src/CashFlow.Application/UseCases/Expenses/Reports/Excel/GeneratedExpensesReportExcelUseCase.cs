@@ -1,3 +1,4 @@
+using CashFlow.Domain.Enums;
 using CashFlow.Domain.Reports;
 using CashFlow.Domain.Repositories.Expenses;
 using ClosedXML.Excel;
@@ -9,6 +10,10 @@ public class GeneratedExpensesReportExcelUseCase(IExpensesReadOnlyRepository rep
     public async Task<byte[]> Execute(DateOnly month)
     {
         var expenses = await repository.FilterByMonth(month);
+        if (expenses.Count == 0)
+        {
+            return [];
+        }
         
         var workbook = new XLWorkbook();
         workbook.Author = "Ricardo Brito";
@@ -19,10 +24,35 @@ public class GeneratedExpensesReportExcelUseCase(IExpensesReadOnlyRepository rep
         
         InsertHeader(worksheet);
 
+        int row = 2;
+        foreach (var expense in expenses)
+        {
+            worksheet.Cell($"A{row}").Value = expense.Title;
+            worksheet.Cell($"B{row}").Value = expense.Date;
+            worksheet.Cell($"C{row}").Value = ConvertPaymentTypeToString(expense.PaymentType);
+            worksheet.Cell($"D{row}").Value = expense.Amount;
+            worksheet.Cell($"D{row}").Style.Alignment.SetHorizontal(XLAlignmentHorizontalValues.Right);
+            worksheet.Cell($"E{row}").Value = expense.Description;
+            worksheet.Cell($"E{row}").Style.Alignment.SetHorizontal(XLAlignmentHorizontalValues.Center);
+            row++;
+        }
+
         var file = new MemoryStream();
         workbook.SaveAs(file);
 
         return file.ToArray();
+    }
+    
+    private string ConvertPaymentTypeToString(PaymentType paymentType)
+    {
+        return paymentType switch
+        {
+            PaymentType.Cash => ResourceReportGenerationMessages.CASH,
+            PaymentType.CreditCard => ResourceReportGenerationMessages.CREDIT_CARD,
+            PaymentType.DebitCard => ResourceReportGenerationMessages.DEBIT_CARD,
+            PaymentType.BankTransfer => ResourceReportGenerationMessages.BANK_TRANSFER,
+            _ => string.Empty
+        };
     }
     
     private void InsertHeader(IXLWorksheet worksheet)

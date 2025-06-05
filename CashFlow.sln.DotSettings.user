@@ -19,6 +19,8 @@
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Expenses.Register.RegisterExpenseValidatorTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Miscellaneous_0020Files_002FNosalyj/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Miscellaneous_0020Files_002FResourceReportGenerationMessages/@EntryIndexedValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=src_002FCashFlow_002EDomain_002FReports_002FResourceReportGenerationMessages/@EntryIndexedValue">True</s:Boolean>
 	
 	
@@ -28,5 +30,5 @@
 	
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/ShowComments/@EntryValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/ShowOnlyErrors/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/ShowOnlyErrors/@EntryValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/ShowOnlyStringResources/@EntryValue">False</s:Boolean></wpf:ResourceDictionary>

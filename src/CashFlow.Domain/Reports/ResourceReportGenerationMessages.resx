@@ -6,6 +6,9 @@
             
         </xsd:element>
     </xsd:schema>
+    <resheader name="AccessModifier">
+        <value>Public</value>
+    </resheader>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
@@ -17,9 +20,6 @@
     </resheader>
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <resheader name="AccessModifier">
-        <value>Public</value>
     </resheader>
     <data name="AMOUNT" xml:space="preserve">
         <value>Amount</value>
@@ -35,5 +35,17 @@
     </data>
     <data name="TITLE" xml:space="preserve">
         <value>Title</value>
+    </data>
+    <data name="CASH" xml:space="preserve">
+        <value>Money</value>
+    </data>
+    <data name="DEBIT_CARD" xml:space="preserve">
+        <value>Debit card</value>
+    </data>
+    <data name="CREDIT_CARD" xml:space="preserve">
+        <value>Credit card</value>
+    </data>
+    <data name="BANK_TRANSFER" xml:space="preserve">
+        <value>Bank transfer</value>
     </data>
 </root>

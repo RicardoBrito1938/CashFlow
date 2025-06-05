@@ -1,4 +1,7 @@
 <root>
+        <resheader name="AccessModifier">
+            <value>Public</value>
+        </resheader>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
