@@ -104,5 +104,17 @@ namespace CashFlow.Domain.Reports {
                 return ResourceManager.GetString("EXPENSES_FOR", resourceCulture);
             }
         }
+        
+        internal static string TOTAL_SPENT_IN {
+            get {
+                return ResourceManager.GetString("TOTAL_SPENT_IN", resourceCulture);
+            }
+        }
+        
+        internal static string TOTAL_SPENT {
+            get {
+                return ResourceManager.GetString("TOTAL_SPENT", resourceCulture);
+            }
+        }
     }
 }

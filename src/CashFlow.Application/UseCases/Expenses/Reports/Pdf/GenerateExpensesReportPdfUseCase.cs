@@ -9,6 +9,7 @@ namespace CashFlow.Application.UseCases.Expenses.Reports.Pdf;
 
 public class GenerateExpensesReportPdfUseCase: IGenerateExpensesReportPdfUseCase
 {
+    private const string CURRENCY_SYMBOL = "£";
     private readonly IExpensesReadOnlyRepository _repository;
     public GenerateExpensesReportPdfUseCase(IExpensesReadOnlyRepository repository)
     {
@@ -20,23 +21,48 @@ public class GenerateExpensesReportPdfUseCase: IGenerateExpensesReportPdfUseCase
         var expenses = await _repository.FilterByMonth(month);
         if (expenses.Count == 0) return [];
         
+        var document = CreateDocument(month, expenses);
+        var page = CreatePage(document);
+
+        var paragraph = page.AddParagraph();
+        var title = string.Format(ResourceReportGenerationMessages.TOTAL_SPENT_IN, month.ToString("Y"));
+        
+        paragraph.AddFormattedText(title, new Font { Name = FontHelper.RALEWAY_REGULAR, Size = 15 });
+        paragraph.AddLineBreak();
+
+        var totalExpenses = expenses.Sum(expense => expense.Amount);
+        paragraph.AddFormattedText($"{totalExpenses} {CURRENCY_SYMBOL}", new Font { Name = FontHelper.WORKSANS_BLACK, Size = 50 });
+        
         return [];
     }
     
     private Document CreateDocument(DateOnly month, IList<Domain.Entities.Expense> expenses)
     {
-        var document = new Document();
-        document.Info.Title = $"{ResourceReportGenerationMessages.EXPENSES_FOR} - {month.ToString("Y")}";
-        document.Info.Author = "Ricardo Brito";
-        
+        var document = new Document
+        {
+            Info =
+            {
+                Title = $"{ResourceReportGenerationMessages.EXPENSES_FOR} - {month.ToString("Y")}",
+                Author = "Ricardo Brito"
+            }
+        };
+
         var style = document.Styles["Normal"];
         style!.Font.Name = FontHelper.RALEWAY_REGULAR;
         
-        var section = document.AddSection();
-        section.AddParagraph($"Expenses Report for {month.ToString("Y")}", "Heading1");
-        
-        // Add table and content here
-        
         return document;
+    }
+
+    private Section CreatePage(Document document)
+    {
+        var section = document.AddSection();
+        section.PageSetup = document.DefaultPageSetup.Clone();
+        section.PageSetup.PageFormat = PageFormat.A4;
+        section.PageSetup.LeftMargin = 40;
+        section.PageSetup.RightMargin = 40;
+        section.PageSetup.TopMargin = 80;
+        section.PageSetup.BottomMargin = 80;
+        
+        return section;
     }
 }

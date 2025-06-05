@@ -51,4 +51,10 @@
     <data name="EXPENSES_FOR" xml:space="preserve">
         <value>Expenses for </value>
     </data>
+    <data name="TOTAL_SPENT_IN" xml:space="preserve">
+        <value>Total spent in {0}</value>
+    </data>
+    <data name="TOTAL_SPENT" xml:space="preserve">
+        <value>Total spent</value>
+    </data>
 </root>
