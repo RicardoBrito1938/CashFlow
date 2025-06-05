@@ -17,7 +17,7 @@ public class GeneratedExpensesReportExcelUseCase(IExpensesReadOnlyRepository rep
             return [];
         }
         
-        var workbook = new XLWorkbook();
+        using var workbook = new XLWorkbook();
         workbook.Author = "Ricardo Brito";
         workbook.Style.Font.FontSize = 12;
         workbook.Style.Font.FontName = "Arial";
