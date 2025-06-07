@@ -24,6 +24,9 @@
     <None Remove="UseCases\Expenses\Reports\Fonts\Raleway-Regular.ttf" />
     <None Remove="UseCases\Expenses\Reports\Fonts\WorkSans-Black.ttf" />
     <None Remove="UseCases\Expenses\Reports\Fonts\WorkSans-Regular.ttf" />
+    <None Update="UseCases\Expenses\Reports\Pdf\Assets\me.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
