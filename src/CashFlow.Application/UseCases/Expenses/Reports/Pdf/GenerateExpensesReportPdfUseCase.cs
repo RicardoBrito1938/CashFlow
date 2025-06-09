@@ -2,12 +2,10 @@ using System.Reflection;
 using CashFlow.Application.UseCases.Expenses.Reports.Pdf.Fonts;
 using CashFlow.Domain.Reports;
 using CashFlow.Domain.Repositories.Expenses;
-using DocumentFormat.OpenXml.Drawing.Wordprocessing;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.DocumentObjectModel.Tables;
 using MigraDoc.Rendering;
 using PdfSharp.Fonts;
-using PdfSharp.Snippets.Font;
 
 namespace CashFlow.Application.UseCases.Expenses.Reports.Pdf;
 
@@ -115,7 +113,6 @@ public class GenerateExpensesReportPdfUseCase: IGenerateExpensesReportPdfUseCase
     {
         var table = page.AddTable();
         table.Borders.Width = 0.75;
-        table.Borders.Color = Colors.Black;
         
         // Define columns
         table.AddColumn("195").Format.Alignment = ParagraphAlignment.Left;
@@ -124,6 +121,5 @@ public class GenerateExpensesReportPdfUseCase: IGenerateExpensesReportPdfUseCase
         table.AddColumn("120").Format.Alignment = ParagraphAlignment.Right;
         
         return table;
-        
     }
 }
