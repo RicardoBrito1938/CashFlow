@@ -4,6 +4,7 @@ using CashFlow.Domain.Reports;
 using CashFlow.Domain.Repositories.Expenses;
 using DocumentFormat.OpenXml.Drawing.Wordprocessing;
 using MigraDoc.DocumentObjectModel;
+using MigraDoc.DocumentObjectModel.Tables;
 using MigraDoc.Rendering;
 using PdfSharp.Fonts;
 using PdfSharp.Snippets.Font;
@@ -30,6 +31,11 @@ public class GenerateExpensesReportPdfUseCase: IGenerateExpensesReportPdfUseCase
         CreateHeaderWithProfilePicture(page);
         var totalExpenses = expenses.Sum(expense => expense.Amount);
         CreateTotalExpensesSection(page, month, totalExpenses);
+
+        foreach (var expense in expenses)
+        {
+            var table = CreateExpenseTable(page);
+        }
         
         return RenderDocumentToPdf(document);
     }
@@ -103,5 +109,21 @@ public class GenerateExpensesReportPdfUseCase: IGenerateExpensesReportPdfUseCase
         paragraph.AddFormattedText(title, new Font { Name = FontHelper.RALEWAY_REGULAR, Size = 15 });
         paragraph.AddLineBreak();
         paragraph.AddFormattedText($"{totalExpenses} {CURRENCY_SYMBOL}", new Font { Name = FontHelper.WORKSANS_BLACK, Size = 50 });
+    }
+
+    private Table CreateExpenseTable(Section page)
+    {
+        var table = page.AddTable();
+        table.Borders.Width = 0.75;
+        table.Borders.Color = Colors.Black;
+        
+        // Define columns
+        table.AddColumn("195").Format.Alignment = ParagraphAlignment.Left;
+        table.AddColumn("80").Format.Alignment = ParagraphAlignment.Center;
+        table.AddColumn("120").Format.Alignment = ParagraphAlignment.Center;
+        table.AddColumn("120").Format.Alignment = ParagraphAlignment.Right;
+        
+        return table;
+        
     }
 }
