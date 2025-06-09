@@ -76,4 +76,4 @@
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/MigraDoc.DocumentObjectModel.dll
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/MigraDoc.Rendering.dll
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/MigraDoc.RtfRendering.dll
-/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/UseCases/Expenses/Reports/Pdf/Assets/me.png
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/UseCases/Expenses/Reports/Pdf/Assets/me.jpeg
