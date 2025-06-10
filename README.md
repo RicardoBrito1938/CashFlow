@@ -29,6 +29,18 @@ This project is architected using clean architecture principles in .NET 9.0 with
 - **Scalable and Maintainable**: Designed to be easily extendable and maintainable as the application grows.
 - **Documentation**: Well-documented code and README for easy onboarding and understanding of the project.
 
+## Requirements
+- Clone the repository:
+  ```bash
+  git clone https://github.com/RicardoBrito1938/CashFlow.git
+  cd CashFlow
+  ```
+- [.NET 9.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+- [MySQL Server](https://dev.mysql.com/downloads/mysql/)
+- [Docker](https://www.docker.com/products/docker-desktop/) (for database setup)
+- [Visual Studio](https://visualstudio.microsoft.com/vs/) or any compatible IDE for .NET development
+- (Optional) [Git](https://git-scm.com/) for version control
+
 
 ## Database Setup
 
@@ -76,3 +88,4 @@ dotnet sln add src/CashFlow.Infra/CashFlow.Infra.csproj
 mkdir tests
 dotnet new xunit -n CashFlow.Tests -o tests/CashFlow.Tests
 dotnet sln add tests/CashFlow.Tests/CashFlow.Tests.csproj
+```
