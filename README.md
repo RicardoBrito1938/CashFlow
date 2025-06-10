@@ -1,8 +1,14 @@
-
 # CashFlow Application
 This project is architected using clean architecture principles in .NET 9.0 with a modular design separating API, Application, Domain, Infrastructure, Communication, and Exception handling layers. It leverages MySQL as the database backend, with Docker support for easy setup and deployment. The codebase emphasizes maintainable and testable design, incorporating robust unit testing using xUnit alongside powerful tools such as AutoMapper for object mapping, FluentAssertions for expressive and readable tests, FluentValidation for comprehensive request data validation, and Scallar for functional programming paradigms or scripting integration. These technologies help ensure clean, reliable, and scalable application development.
 
 ## Features
+
+- **Expense Management:**  
+  Track, categorize, and manage various expenses with an intuitive API designed around your business rules. Supports adding, updating, and deleting expense entries with detailed metadata for clarity and auditing.
+- **Advanced Reporting:**  
+  Generate comprehensive financial reports summarizing expenses over customizable time ranges. Reports include aggregated totals, category breakdowns, and trends analysis to help better understand spending patterns.
+- **PDF Generation:**  
+  Export reports and detailed expense data into professionally formatted PDF documents. This functionality supports sharing and archiving financial data in a portable, easy-to-distribute format.
 - **Clean Architecture**: Modular design with clear separation of concerns.
 - **.NET 9.0**: Utilizes the latest features and improvements in .NET.
 - **MySQL Database**: Uses MySQL for data persistence, with Docker for easy setup.
@@ -70,8 +76,3 @@ dotnet sln add src/CashFlow.Infra/CashFlow.Infra.csproj
 mkdir tests
 dotnet new xunit -n CashFlow.Tests -o tests/CashFlow.Tests
 dotnet sln add tests/CashFlow.Tests/CashFlow.Tests.csproj
-
-
-
-
-
