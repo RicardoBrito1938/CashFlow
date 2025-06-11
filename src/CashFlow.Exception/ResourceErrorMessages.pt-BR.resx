@@ -36,4 +36,19 @@
     <data name="NOT_FOUND" xml:space="preserve">
         <value>Nao encontrado</value>
     </data>
+    <data name="NAME_REQUIRED" xml:space="preserve">
+        <value>Nome obrigatorio</value>
+    </data>
+    <data name="EMAIL_REQUIRED" xml:space="preserve">
+        <value>E-mail obrigatorio</value>
+    </data>
+    <data name="INVALID_EMAIL" xml:space="preserve">
+        <value>E-mail invalido</value>
+    </data>
+    <data name="PASSWORD_REQUIRED" xml:space="preserve">
+        <value>Senha obrigatoria</value>
+    </data>
+    <data name="PASSWORD_INVALID" xml:space="preserve">
+        <value>Senha invalida</value>
+    </data>
 </root>

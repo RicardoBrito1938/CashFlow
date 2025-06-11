@@ -39,4 +39,19 @@
     <data name="NOT_FOUND" xml:space="preserve">
         <value>Not found</value>
     </data>
+    <data name="NAME_REQUIRED" xml:space="preserve">
+        <value>The name is required</value>
+    </data>
+    <data name="EMAIL_REQUIRED" xml:space="preserve">
+        <value>The e-mail is required</value>
+    </data>
+    <data name="INVALID_EMAIL" xml:space="preserve">
+        <value>The e-mail is invalid</value>
+    </data>
+    <data name="PASSWORD_REQUIRED" xml:space="preserve">
+        <value>Password required </value>
+    </data>
+    <data name="PASSWORD_INVALID" xml:space="preserve">
+        <value>Invalid password</value>
+    </data>
 </root>

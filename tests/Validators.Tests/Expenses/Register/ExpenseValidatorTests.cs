@@ -1,6 +1,5 @@
-using CashFlow.Application.UseCases.Expenses.Register;
+using CashFlow.Application.UseCases.Expenses;
 using CashFlow.Communication.Enums;
-using CashFlow.Communication.Requests;
 using CashFlow.Exception;
 using CommonTestUtils.Requests;
 using Shouldly;
@@ -17,7 +16,7 @@ public class ExpenseValidatorTests
         
         var result = validator.Validate(request);
         
-        result.IsValid.ShouldBeTrue();
+        result.IsValid.ShouldBe(true);
     }
     
     [Fact]
