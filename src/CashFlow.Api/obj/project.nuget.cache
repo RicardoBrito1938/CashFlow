@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "URcms4pXRFo=",
+  "dgSpecHash": "fiMGPWGvHk0=",
   "success": true,
   "projectFilePath": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/CashFlow.Api.csproj",
   "expectedPackageFiles": [
     "/Users/ricardobrito/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",
+    "/Users/ricardobrito/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/ricardobrito/.nuget/packages/closedxml/0.105.0/closedxml.0.105.0.nupkg.sha512",
     "/Users/ricardobrito/.nuget/packages/closedxml.parser/2.0.0/closedxml.parser.2.0.0.nupkg.sha512",
     "/Users/ricardobrito/.nuget/packages/documentformat.openxml/3.1.1/documentformat.openxml.3.1.1.nupkg.sha512",
