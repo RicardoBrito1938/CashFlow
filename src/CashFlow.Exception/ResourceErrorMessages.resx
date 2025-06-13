@@ -54,4 +54,7 @@
     <data name="PASSWORD_INVALID" xml:space="preserve">
         <value>Invalid password</value>
     </data>
+    <data name="EMAIL_ALREADY_EXISTS" xml:space="preserve">
+        <value>E-mail already exists</value>
+    </data>
 </root>
