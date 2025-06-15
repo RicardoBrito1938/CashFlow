@@ -5,12 +5,19 @@ using CashFlow.Domain.Entities;
 using CashFlow.Domain.Repositories;
 using CashFlow.Domain.Repositories.User;
 using CashFlow.Domain.Security.Cryptography;
+using CashFlow.Domain.Security.Tokens;
 using CashFlow.Exception;
 using CashFlow.Exception.ExceptionsBase;
 
 namespace CashFlow.Application.UseCases.Users.Register;
 
-public class RegisterUserUseCase(IMapper mapper, IPasswordEncrypter passwordEncrypter, IUsersReadOnlyRepository usersReadOnlyRepository, IUsersWriteOnlyRepository usersWriteOnlyRepository, IUnitOfWork unitOfWork): IRegisterUserUseCase
+public class RegisterUserUseCase(
+    IMapper mapper,
+    IPasswordEncrypter passwordEncrypter,
+    IUsersReadOnlyRepository usersReadOnlyRepository,
+    IUsersWriteOnlyRepository usersWriteOnlyRepository,
+    IUnitOfWork unitOfWork,
+    IAccessTokenGenerator accessTokenGenerator): IRegisterUserUseCase
 {
     public async Task<ResponseRegisteredUserJson> Execute(RequestRegisterUserJson request)
     {
@@ -25,6 +32,7 @@ public class RegisterUserUseCase(IMapper mapper, IPasswordEncrypter passwordEncr
         return new ResponseRegisteredUserJson()
         {
             Name = user.Name,
+            Token = accessTokenGenerator.Generate(user)
         };
     }
 

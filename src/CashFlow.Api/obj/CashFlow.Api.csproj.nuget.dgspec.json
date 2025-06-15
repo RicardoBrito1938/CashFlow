@@ -411,6 +411,10 @@
               "target": "Package",
               "version": "[9.0.5, )"
             },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[9.0.0-preview.3.efcore.9.0.0, )"
