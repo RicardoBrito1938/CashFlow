@@ -116,5 +116,11 @@ namespace CashFlow.Exception {
                 return ResourceManager.GetString("EMAIL_ALREADY_EXISTS", resourceCulture);
             }
         }
+        
+        public static string PASSWORD_OR_EMAIL_INVALID {
+            get {
+                return ResourceManager.GetString("PASSWORD_OR_EMAIL_INVALID", resourceCulture);
+            }
+        }
     }
 }
