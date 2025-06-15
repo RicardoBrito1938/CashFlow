@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Validators.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+866ccfbba3a56979851dfed27e4fe6c7ad187803")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55517a0d1639e4f467975019fdfab8b88d5dba9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Validators.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Validators.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
