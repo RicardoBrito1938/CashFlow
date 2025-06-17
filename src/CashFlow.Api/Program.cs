@@ -59,6 +59,7 @@ app.MapControllers();
 await MigrateDatabase(app.Services);
 
 app.Run();
+return;
 
 async Task MigrateDatabase(IServiceProvider serviceProvider)
 {

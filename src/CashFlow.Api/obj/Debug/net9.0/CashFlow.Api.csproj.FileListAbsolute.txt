@@ -169,3 +169,6 @@
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

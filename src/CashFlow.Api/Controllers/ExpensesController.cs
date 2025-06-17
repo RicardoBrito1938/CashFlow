@@ -7,13 +7,14 @@ using CashFlow.Application.UseCases.Expenses.Update;
 using CashFlow.Communication.Requests;
 using CashFlow.Communication.Responses;
 using CashFlow.Exception.ExceptionsBase;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CashFlow.Api.Controllers;
 
 
 [ApiController]
 [Route("api/[controller]")]
-[Produces("application/json")]
+[Authorize]
 public class ExpensesController : ControllerBase
 {
 
