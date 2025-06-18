@@ -12,14 +12,32 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AType_002ECoreCLR_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F7e333a9f3297ba553cccfd3b7c3f1f96125b23d09f883e4d6e66d531559a4c_003FType_002ECoreCLR_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AXLRangeBase_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fb48983f97d522ed19b681bf6f133c9baafae03ce9d864ed711a5aa8752bf_003FXLRangeBase_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AXLWorksheet_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F95dc236c6854d515fec2d9794746c52171e52b19e7f2ca0fcc6a6636bb4ed18_003FXLWorksheet_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0d7f083e_002Da171_002D47a8_002D825d_002Dacfbab48d92b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="RegisterExpenseValidatorTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0d7f083e_002Da171_002D47a8_002D825d_002Dacfbab48d92b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RegisterExpenseValidatorTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Expenses.Register.RegisterExpenseValidatorTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests.Success&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=46ec58e0_002Debc5_002D4fcf_002Db256_002D2a05d7e64301/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Error_Name_Required" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.PasswordValidatorTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9ffeba42_002D3583_002D425f_002Dae6b_002Ddf9787f0274c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests.Success&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a2d1f58a_002D172b_002D4e4b_002D8294_002D06170f536bee/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnitTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Expenses.Register.RegisterExpenseValidatorTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests.Success&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests.Error_EmailRequired&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b98c6f9c_002D86cc_002D4e79_002Db116_002D8606f4301f21/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Error_EmailRequired" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests.Error_EmailRequired&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests.Error_Name_Required&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Miscellaneous_0020Files_002FHunitis/@EntryIndexedValue">False</s:Boolean>

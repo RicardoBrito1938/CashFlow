@@ -8,6 +8,7 @@ namespace CashFlow.Application.UseCases.Users;
 public partial class PasswordValidator<T>: PropertyValidator<T, string>
 {
     private const string ERROR_MESSAGE = "ErrorMessage";
+    private const int MIN_LENGTH = 8;
 
     protected override string GetDefaultMessageTemplate(string errorCode)
     {
@@ -15,7 +16,7 @@ public partial class PasswordValidator<T>: PropertyValidator<T, string>
     }
     public override bool IsValid(ValidationContext<T> context, string password)
     {
-        if (string.IsNullOrWhiteSpace(password) || password.Length < 8 || UppercaseLetters().IsMatch(password) == false || LowerCaseLetters().IsMatch(password) == false || NumbersRegex().IsMatch(password) == false || MyRegex().IsMatch(password) == false)
+        if (string.IsNullOrWhiteSpace(password) || password.Length < MIN_LENGTH || UppercaseLetters().IsMatch(password) == false || LowerCaseLetters().IsMatch(password) == false || NumbersRegex().IsMatch(password) == false || MyRegex().IsMatch(password) == false)
         {
             context.MessageFormatter.AppendArgument(ERROR_MESSAGE, ResourceErrorMessages.PASSWORD_INVALID);
             return false;
