@@ -9,6 +9,7 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AObject_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F68b06b8592b1287fd78f3ee68566d6a38d6e2f45b9a9e6ebd4d0e9972f7c29_003FObject_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003APdfDocumentRenderer_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F4acf853f57a94c94afd55cc36052648b21200_003F6b_003F614a471e_003FPdfDocumentRenderer_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AServiceProvider_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9_003FServiceProvider_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ATestInvoker_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F5e14a4e27990972fa4ae94975603bd298aaf328ee083c03b10569ee4724d57_003FTestInvoker_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AType_002ECoreCLR_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F7e333a9f3297ba553cccfd3b7c3f1f96125b23d09f883e4d6e66d531559a4c_003FType_002ECoreCLR_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AXLRangeBase_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fb48983f97d522ed19b681bf6f133c9baafae03ce9d864ed711a5aa8752bf_003FXLRangeBase_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AXLWorksheet_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F95dc236c6854d515fec2d9794746c52171e52b19e7f2ca0fcc6a6636bb4ed18_003FXLWorksheet_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
@@ -21,6 +22,9 @@
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.PasswordValidatorTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Register.RegisterUserUseCaseTest.success&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Register.RegisterUserUseCaseTest.Email_Already_Exist&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Register.RegisterUserUseCaseTest&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9ffeba42_002D3583_002D425f_002Dae6b_002Ddf9787f0274c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
@@ -38,6 +42,12 @@
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests.Error_EmailRequired&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests.Error_Name_Required&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f7534e78_002Daef6_002D494a_002D89c3_002Ddac5e224ed4d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Register.RegisterUserUseCaseTest.Success&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Register.RegisterUserUseCaseTest.Error_Name_Required&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Miscellaneous_0020Files_002FHunitis/@EntryIndexedValue">False</s:Boolean>

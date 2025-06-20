@@ -14,3 +14,11 @@
 /Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/obj/Debug/net9.0/refint/CommonTestUtils.dll
 /Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/obj/Debug/net9.0/CommonTestUtils.pdb
 /Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/obj/Debug/net9.0/ref/CommonTestUtils.dll
+/Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/bin/Debug/net9.0/UseCases/Expenses/Reports/Pdf/Assets/me.jpeg
+/Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/bin/Debug/net9.0/CashFlow.Application.dll
+/Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/bin/Debug/net9.0/CashFlow.Domain.dll
+/Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/bin/Debug/net9.0/CashFlow.Exception.dll
+/Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/bin/Debug/net9.0/CashFlow.Application.pdb
+/Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/bin/Debug/net9.0/CashFlow.Domain.pdb
+/Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/bin/Debug/net9.0/CashFlow.Exception.pdb
+/Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/bin/Debug/net9.0/pt-BR/CashFlow.Exception.resources.dll
