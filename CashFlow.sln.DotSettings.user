@@ -25,6 +25,9 @@
     &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Register.RegisterUserUseCaseTest.success&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Register.RegisterUserUseCaseTest.Email_Already_Exist&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Register.RegisterUserUseCaseTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.DoLoginUseCaseTest.Success&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.DoLoginUseCaseTest.Error_User_Not_Found&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.DoLoginUseCaseTest.Error_Password_Not_Match&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9ffeba42_002D3583_002D425f_002Dae6b_002Ddf9787f0274c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
