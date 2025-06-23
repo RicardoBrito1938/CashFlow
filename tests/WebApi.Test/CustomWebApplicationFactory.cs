@@ -1,5 +1,8 @@
+using CashFlow.Infra.DataAccess;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace WebApi.Test;
 
@@ -7,11 +10,14 @@ public class CustomWebApplicationFactory: WebApplicationFactory<Program>
 {
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
-        builder.UseEnvironment("Testing");
-        builder.ConfigureServices(services =>
+        builder.UseEnvironment("Testing").ConfigureServices(services =>
         {
-            // Here you can configure services for testing, like mocking repositories or other dependencies.
-            // For example, you can replace a real database context with an in-memory database.
+            var provider = services.AddEntityFrameworkInMemoryDatabase().BuildServiceProvider();
+            services.AddDbContext<CashFlowDbContext>(config =>
+            {
+                config.UseInMemoryDatabase("InMemoryDbForTesting");
+                config.UseInternalServiceProvider(provider);
+            });
         });
     }
 }
