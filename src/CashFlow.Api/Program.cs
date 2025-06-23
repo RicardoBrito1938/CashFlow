@@ -66,3 +66,5 @@ async Task MigrateDatabase(IServiceProvider serviceProvider)
     await using var scope = serviceProvider.CreateAsyncScope();
     await DataBaseMigration.MigrateDatabase(scope.ServiceProvider);
 }
+
+public abstract partial class Program { }
