@@ -34,6 +34,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4f2592cc_002D0226_002D4f71_002D903a_002D010a867bdc44/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Success #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Users.Register.RegisterUserTest.Success&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Users.Register.RegisterUserTest.Error_Name_Required&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9ffeba42_002D3583_002D425f_002Dae6b_002Ddf9787f0274c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
