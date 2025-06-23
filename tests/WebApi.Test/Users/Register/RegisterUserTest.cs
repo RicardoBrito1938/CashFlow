@@ -6,7 +6,7 @@ using Shouldly;
 
 namespace WebApi.Test.Users.Register;
 
-public class RegisterUserTest(WebApplicationFactory<Program> factory) : IClassFixture<WebApplicationFactory<Program>>
+public class RegisterUserTest(CustomWebApplicationFactory factory) : IClassFixture<CustomWebApplicationFactory>
 {
     private const string Method = "api/User";
     private readonly HttpClient _client = factory.CreateClient();
