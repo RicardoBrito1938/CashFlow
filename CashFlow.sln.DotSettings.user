@@ -18,6 +18,7 @@
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Users.Register.RegisterUserTest.Error_Name_Required&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Login.DoLogin.DoLoginTest.Success&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Login.DoLogin.DoLoginTest.ErrorLoginInvalid&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0d7f083e_002Da171_002D47a8_002D825d_002Dacfbab48d92b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RegisterExpenseValidatorTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
