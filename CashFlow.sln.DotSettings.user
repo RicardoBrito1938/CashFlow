@@ -18,7 +18,7 @@
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests.Success&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=46ec58e0_002Debc5_002D4fcf_002Db256_002D2a05d7e64301/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Error_Name_Required" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=46ec58e0_002Debc5_002D4fcf_002Db256_002D2a05d7e64301/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Error_Name_Required" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.PasswordValidatorTest&lt;/TestId&gt;
@@ -28,6 +28,11 @@
     &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.DoLoginUseCaseTest.Success&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.DoLoginUseCaseTest.Error_User_Not_Found&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.DoLoginUseCaseTest.Error_Password_Not_Match&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Users.Register.RegisterUserTest.Success&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4f2592cc_002D0226_002D4f71_002D903a_002D010a867bdc44/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Success #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Users.Register.RegisterUserTest.Success&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
