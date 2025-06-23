@@ -1,4 +1,6 @@
+using System.Globalization;
 using System.Net;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
 using CashFlow.Exception;
@@ -30,13 +32,15 @@ public class RegisterUserTest(CustomWebApplicationFactory factory) : IClassFixtu
     {
         var request = RequestRegisterUserJsonBuilder.Build();
         request.Name = string.Empty;
+        _client.DefaultRequestHeaders.AcceptLanguage.Add(new StringWithQualityHeaderValue("pt-BR"));
         var result = await _client.PostAsJsonAsync(Method, request);
         result.StatusCode.ShouldBe(HttpStatusCode.BadRequest);
         var body = await result.Content.ReadAsStreamAsync();
         var response = await JsonDocument.ParseAsync(body);
         var errors = response.RootElement.GetProperty("errorMessages").EnumerateArray();
         errors.Count().ShouldBe(1);
-        errors.First().GetString().ShouldBe(ResourceErrorMessages.NAME_REQUIRED);
+        var expectedMessageError = ResourceErrorMessages.ResourceManager.GetString("NAME_REQUIRED", new CultureInfo("pt-BR"));
+        errors.First().GetString().ShouldBe(expectedMessageError);
     }
     
 }
