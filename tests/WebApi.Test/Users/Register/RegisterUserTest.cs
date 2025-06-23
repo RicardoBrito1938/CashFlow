@@ -7,6 +7,7 @@ using CashFlow.Exception;
 using CommonTestUtils.Requests;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Shouldly;
+using WebApi.Test.InlineData;
 
 namespace WebApi.Test.Users.Register;
 
@@ -27,12 +28,13 @@ public class RegisterUserTest(CustomWebApplicationFactory factory) : IClassFixtu
         response.RootElement.GetProperty("token").GetString().ShouldNotBeNullOrEmpty();
     }
 
-    [Fact]
-    public async Task Error_Name_Required()
+    [Theory]
+    [ClassData(typeof(CultureInlineDataTest))]
+    public async Task Error_Name_Required(string language)
     {
         var request = RequestRegisterUserJsonBuilder.Build();
         request.Name = string.Empty;
-        _client.DefaultRequestHeaders.AcceptLanguage.Add(new StringWithQualityHeaderValue("pt-BR"));
+        _client.DefaultRequestHeaders.AcceptLanguage.Add(new StringWithQualityHeaderValue(language));
         var result = await _client.PostAsJsonAsync(Method, request);
         result.StatusCode.ShouldBe(HttpStatusCode.BadRequest);
         var body = await result.Content.ReadAsStreamAsync();
