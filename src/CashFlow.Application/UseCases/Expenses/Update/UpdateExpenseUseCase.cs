@@ -3,20 +3,25 @@ using CashFlow.Application.UseCases.Expenses.Register;
 using CashFlow.Communication.Requests;
 using CashFlow.Domain.Repositories;
 using CashFlow.Domain.Repositories.Expenses;
+using CashFlow.Domain.Services.LoggedUser;
 using CashFlow.Exception;
 using CashFlow.Exception.ExceptionsBase;
 
 namespace CashFlow.Application.UseCases.Expenses.Update;
 
-public class UpdateExpenseUseCase(IExpensesUpdateOnlyRepository repository, IMapper mapper, IUnitOfWork unitOfWork): IUpdateExpenseUseCase
+public class UpdateExpenseUseCase(
+    IExpensesUpdateOnlyRepository repository,
+    IMapper mapper,
+    IUnitOfWork unitOfWork,
+    ILoggedUser loggedUser): IUpdateExpenseUseCase
 {
     public async Task Execute(long id, RequestExpenseJson request)
     {
         Validate(request);
-        var expense = await repository.GetById(id);
+        var loggedUserEntity = await loggedUser.Get();
+        var expense = await repository.GetById(loggedUserEntity,id);
         if (expense is null)
             throw new NotFoundException(ResourceErrorMessages.NOT_FOUND);
-
         mapper.Map(request, expense);
         repository.Update(expense);
         await unitOfWork.Commit();
