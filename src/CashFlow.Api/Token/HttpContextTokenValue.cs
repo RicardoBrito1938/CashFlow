@@ -2,7 +2,7 @@ using CashFlow.Domain.Security.Tokens;
 
 namespace CashFlow.Api.Token;
 
-public class HttpContextTokenValue(HttpContextAccessor contextAccessor): ITokenProvider
+public class HttpContextTokenValue(IHttpContextAccessor contextAccessor): ITokenProvider
 {
     public string TokenRequest()
     {
