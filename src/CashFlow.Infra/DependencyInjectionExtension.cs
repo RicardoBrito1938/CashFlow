@@ -3,10 +3,12 @@ using CashFlow.Domain.Repositories.Expenses;
 using CashFlow.Domain.Repositories.User;
 using CashFlow.Domain.Security.Cryptography;
 using CashFlow.Domain.Security.Tokens;
+using CashFlow.Domain.Services.LoggedUser;
 using CashFlow.Infra.DataAccess;
 using CashFlow.Infra.DataAccess.Repositories;
 using CashFlow.Infra.Extensions;
 using CashFlow.Infra.Security.Tokens;
+using CashFlow.Infra.Services.LoggedUser;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,6 +22,7 @@ public static class DependencyInjectionExtension
         AddRepositories(services);
         AddEncryption(services);
         AddToken(services, configuration);
+        AddLoggedUser(services);
 
         if(configuration.IsTestingEnvironment() == false) AddDbContext(services, configuration); 
     }
@@ -30,6 +33,11 @@ public static class DependencyInjectionExtension
         var signingKey = configuration.GetValue<string>("Settings:Jwt:SigningKey");
 
         services.AddScoped<IAccessTokenGenerator>(config => new JwtTokenGenerator(expirationTimeInMinutes, signingKey!));
+    }
+    
+    private static void AddLoggedUser(IServiceCollection services)
+    {
+        services.AddScoped<ILoggedUser, LoggedUser>();
     }
 
     private static void AddEncryption(IServiceCollection services)
