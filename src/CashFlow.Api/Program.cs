@@ -5,7 +5,6 @@ using CashFlow.Api.Token;
 using CashFlow.Application;
 using CashFlow.Domain.Security.Tokens;
 using CashFlow.Infra;
-using CashFlow.Infra.DataAccess;
 using CashFlow.Infra.Extensions;
 using CashFlow.Infra.Migrations;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -21,8 +20,8 @@ builder.Services.AddMvc(options =>
 );
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication();
-builder.Services.AddScoped<ITokenProvider, HttpContextTokenValue>();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<ITokenProvider, HttpContextTokenValue>();
 var signingKey = builder.Configuration.GetValue<string>("Settings:Jwt:SigningKey");
 builder.Services.AddAuthentication(config =>
 {
