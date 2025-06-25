@@ -28,12 +28,12 @@ internal class ExpensesRepository(CashFlowDbContext dbContext) : IExpensesReadOn
        return await dbContext.Expenses.AsNoTracking().Where(expense => expense.UserId == user.Id).ToListAsync();
     }
     
-    async Task<Expense?> IExpensesReadOnlyRepository.GetById( User user,long id)
+    async Task<Expense?> IExpensesReadOnlyRepository.GetById(User user,long id)
     {
         return await dbContext.Expenses.AsNoTracking().FirstOrDefaultAsync(expense => expense.Id == id && expense.UserId == user.Id);
     }
 
-    public async Task<List<Expense>> FilterByMonth(DateOnly date)
+    public async Task<List<Expense>> FilterByMonth(User user,DateOnly date)
     {
         var startDate = new DateTime(date.Year, date.Month,  1).Date;
         var daysInMonth = DateTime.DaysInMonth(date.Year, date.Month);
@@ -42,7 +42,7 @@ internal class ExpensesRepository(CashFlowDbContext dbContext) : IExpensesReadOn
         return await dbContext
             .Expenses
             .AsNoTracking()
-            .Where(expense => expense.Date >= startDate && expense.Date <= endDate)
+            .Where(expense => expense.UserId == user.Id && expense.Date >= startDate && expense.Date <= endDate)
             .OrderBy(expense => expense.Date)
             .ToListAsync();
     }
