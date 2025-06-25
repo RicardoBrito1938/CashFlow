@@ -12,15 +12,10 @@ internal class ExpensesRepository(CashFlowDbContext dbContext) : IExpensesReadOn
     }
 
     //Not a fan of this implementation, but it is the simplest way to implement a delete method in EF Core
-    public async Task<bool> Delete(long id)
+    public async Task Delete(long id)
     {
-       var result = await dbContext.Expenses.FirstOrDefaultAsync(expense => expense.Id == id);
-         if (result is null)
-         {
-              return false;
-         }
-         dbContext.Expenses.Remove(result);
-         return true;
+       var result = await dbContext.Expenses.FindAsync(id);
+        dbContext.Expenses.Remove(result!);
     }
 
     public void Update(Expense expense)
@@ -28,15 +23,14 @@ internal class ExpensesRepository(CashFlowDbContext dbContext) : IExpensesReadOn
         dbContext.Expenses.Update(expense);
     }
 
-    public async Task<List<Expense>> GetAll()
+    public async Task<List<Expense>> GetAll(User user)
     {
-        
-       return await dbContext.Expenses.AsNoTracking().ToListAsync();
+       return await dbContext.Expenses.AsNoTracking().Where(expense => expense.UserId == user.Id).ToListAsync();
     }
     
-    async Task<Expense?> IExpensesReadOnlyRepository.GetById(long id)
+    async Task<Expense?> IExpensesReadOnlyRepository.GetById( User user,long id)
     {
-        return await dbContext.Expenses.AsNoTracking().FirstOrDefaultAsync(expense => expense.Id == id);
+        return await dbContext.Expenses.AsNoTracking().FirstOrDefaultAsync(expense => expense.Id == id && expense.UserId == user.Id);
     }
 
     public async Task<List<Expense>> FilterByMonth(DateOnly date)
