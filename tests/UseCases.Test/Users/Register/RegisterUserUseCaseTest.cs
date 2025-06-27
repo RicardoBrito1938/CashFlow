@@ -8,7 +8,7 @@ using CommonTestUtils.Requests;
 using CommonTestUtils.Token;
 using Shouldly;
 
-namespace UseCases.Test.Register;
+namespace UseCases.Test.Users.Register;
 
 public class RegisterUserUseCaseTest
 {
