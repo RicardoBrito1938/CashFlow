@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/CashFlow.Infra.csproj": {}
+    "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Infra\\CashFlow.Infra.csproj": {}
   },
   "projects": {
-    "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Domain/CashFlow.Domain.csproj": {
+    "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Domain\\CashFlow.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Domain/CashFlow.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Domain\\CashFlow.Domain.csproj",
         "projectName": "CashFlow.Domain",
-        "projectPath": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Domain/CashFlow.Domain.csproj",
-        "packagesPath": "/Users/ricardobrito/.nuget/packages/",
-        "outputPath": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Domain/obj/",
+        "projectPath": "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Domain\\CashFlow.Domain.csproj",
+        "packagesPath": "C:\\Users\\Ricar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/ricardobrito/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ricar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,34 +65,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Ricar\\.dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/CashFlow.Infra.csproj": {
+    "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Infra\\CashFlow.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/CashFlow.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Infra\\CashFlow.Infra.csproj",
         "projectName": "CashFlow.Infra",
-        "projectPath": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/CashFlow.Infra.csproj",
-        "packagesPath": "/Users/ricardobrito/.nuget/packages/",
-        "outputPath": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Infra/obj/",
+        "projectPath": "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Infra\\CashFlow.Infra.csproj",
+        "packagesPath": "C:\\Users\\Ricar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Infra\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/ricardobrito/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ricar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Domain/CashFlow.Domain.csproj": {
-                "projectPath": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Domain/CashFlow.Domain.csproj"
+              "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Domain\\CashFlow.Domain.csproj": {
+                "projectPath": "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Domain\\CashFlow.Domain.csproj"
               }
             }
           }
@@ -144,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Ricar\\.dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

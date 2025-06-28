@@ -2511,35 +2511,42 @@
     ]
   },
   "packageFolders": {
-    "/Users/ricardobrito/.nuget/packages/": {}
+    "C:\\Users\\Ricar\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ricardobrito/Documents/study/CashFlow/tests/Validators.Tests/Validators.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\tests\\Validators.Tests\\Validators.Tests.csproj",
       "projectName": "Validators.Tests",
-      "projectPath": "/Users/ricardobrito/Documents/study/CashFlow/tests/Validators.Tests/Validators.Tests.csproj",
-      "packagesPath": "/Users/ricardobrito/.nuget/packages/",
-      "outputPath": "/Users/ricardobrito/Documents/study/CashFlow/tests/Validators.Tests/obj/",
+      "projectPath": "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\tests\\Validators.Tests\\Validators.Tests.csproj",
+      "packagesPath": "C:\\Users\\Ricar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\tests\\Validators.Tests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/ricardobrito/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Ricar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Application/CashFlow.Application.csproj": {
-              "projectPath": "/Users/ricardobrito/Documents/study/CashFlow/src/CashFlow.Application/CashFlow.Application.csproj"
+            "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Application\\CashFlow.Application.csproj": {
+              "projectPath": "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\src\\CashFlow.Application\\CashFlow.Application.csproj"
             },
-            "/Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/CommonTestUtils.csproj": {
-              "projectPath": "/Users/ricardobrito/Documents/study/CashFlow/tests/CommonTestUtils/CommonTestUtils.csproj"
+            "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\tests\\CommonTestUtils\\CommonTestUtils.csproj": {
+              "projectPath": "C:\\Users\\Ricar\\RiderProjects\\CashFlow\\tests\\CommonTestUtils\\CommonTestUtils.csproj"
             }
           }
         }
@@ -2601,7 +2608,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Ricar\\.dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
