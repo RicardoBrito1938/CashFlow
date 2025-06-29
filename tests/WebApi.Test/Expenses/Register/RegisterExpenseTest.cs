@@ -10,18 +10,16 @@ using WebApi.Test.InlineData;
 
 namespace WebApi.Test.Expenses.Register;
 
-public class RegisterExpenseTest(CustomWebApplicationFactory factory): IClassFixture<CustomWebApplicationFactory>
+public class RegisterExpenseTest(CustomWebApplicationFactory factory): CashFlowClassFixture(factory)
 {
     private const string Method = "api/Expenses";
-    private readonly HttpClient _client = factory.CreateClient();
     private readonly string _token = factory.GetToken();
     
     [Fact]
     private async Task Success()
     {
        var request = RequestExpenseJsonBuilder.Build();
-       _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _token);
-       var result = await _client.PostAsJsonAsync(Method, request);
+       var result = await DoPost(requestUri:Method, request: request, token: _token);
        result.StatusCode.ShouldBe(HttpStatusCode.Created);
        var body = await result.Content.ReadAsStreamAsync();
        var response = await JsonDocument.ParseAsync(body);
@@ -34,9 +32,7 @@ public class RegisterExpenseTest(CustomWebApplicationFactory factory): IClassFix
     {
         var request = RequestExpenseJsonBuilder.Build();
         request.Title = string.Empty;
-        _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _token);
-        _client.DefaultRequestHeaders.AcceptLanguage.Add(new StringWithQualityHeaderValue(language));
-        var result = await _client.PostAsJsonAsync(Method, request);
+        var result = await DoPost(requestUri:Method, request:request, language: language, token: _token);
         result.StatusCode.ShouldBe(HttpStatusCode.BadRequest);
         var body = await result.Content.ReadAsStreamAsync();
         var response = await JsonDocument.ParseAsync(body);

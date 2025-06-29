@@ -11,10 +11,9 @@ using WebApi.Test.InlineData;
 
 namespace WebApi.Test.Login.DoLogin;
 
-public class DoLoginTest(CustomWebApplicationFactory factory): IClassFixture<CustomWebApplicationFactory>
+public class DoLoginTest(CustomWebApplicationFactory factory): CashFlowClassFixture(factory)
 {
     private const string Method = "api/Login";
-    private readonly HttpClient _client = factory.CreateClient();
     private readonly string  _email = factory.GetEmail();
     private readonly string _name = factory.GetName();
     private readonly string _password = factory.GetPassword();
@@ -27,7 +26,7 @@ public class DoLoginTest(CustomWebApplicationFactory factory): IClassFixture<Cus
             Email = _email,
             Password = _password
         };
-        var response = await _client.PostAsJsonAsync(Method, request);
+        var response = await DoPost(Method, request);
         response.StatusCode.ShouldBe(HttpStatusCode.OK);
         
         var responseBody = await response.Content.ReadAsStreamAsync();
@@ -41,8 +40,7 @@ public class DoLoginTest(CustomWebApplicationFactory factory): IClassFixture<Cus
     public async Task ErrorLoginInvalid(string language)
     {
        var request = RequestLoginJsonBuilder.Build();
-       _client.DefaultRequestHeaders.AcceptLanguage.Add(new StringWithQualityHeaderValue(language));
-       var response = await _client.PostAsJsonAsync(Method, request);
+       var response = await DoPost(requestUri:Method, request:request, language:language);
          response.StatusCode.ShouldBe(HttpStatusCode.Unauthorized);
          
          var responseBody = await response.Content.ReadAsStreamAsync();
