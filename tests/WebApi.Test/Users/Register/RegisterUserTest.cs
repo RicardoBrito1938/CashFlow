@@ -11,16 +11,15 @@ using WebApi.Test.InlineData;
 
 namespace WebApi.Test.Users.Register;
 
-public class RegisterUserTest(CustomWebApplicationFactory factory) : IClassFixture<CustomWebApplicationFactory>
+public class RegisterUserTest(CustomWebApplicationFactory factory) : CashFlowClassFixture(factory)
 {
     private const string Method = "api/User";
-    private readonly HttpClient _client = factory.CreateClient();
-
+    
     [Fact]
     public async Task Success()
     {
         var request = RequestRegisterUserJsonBuilder.Build();
-        var result =  await _client.PostAsJsonAsync(Method, request);
+        var result =  await DoPost(Method, request);
         result.StatusCode.ShouldBe(HttpStatusCode.Created);
         var body = await result.Content.ReadAsStreamAsync();
         var response = await JsonDocument.ParseAsync(body);
@@ -34,8 +33,7 @@ public class RegisterUserTest(CustomWebApplicationFactory factory) : IClassFixtu
     {
         var request = RequestRegisterUserJsonBuilder.Build();
         request.Name = string.Empty;
-        _client.DefaultRequestHeaders.AcceptLanguage.Add(new StringWithQualityHeaderValue(language));
-        var result = await _client.PostAsJsonAsync(Method, request);
+        var result = await DoPost(Method, request, language: language);
         result.StatusCode.ShouldBe(HttpStatusCode.BadRequest);
         var body = await result.Content.ReadAsStreamAsync();
         var response = await JsonDocument.ParseAsync(body);
