@@ -15,6 +15,14 @@ public class CashFlowClassFixture(CustomWebApplicationFactory factory): IClassFi
         return await _client.PostAsJsonAsync(requestUri, request);
     }
     
+    protected async Task<HttpResponseMessage> DoGet(string requestUri, string token, string language = "")
+    {
+        AuthorizeRequest(token);
+        SetLanguage(language);
+        
+        return await _client.GetAsync(requestUri);
+    }
+    
     private void AuthorizeRequest(string token)
     {
         if (string.IsNullOrEmpty(token)) return;
