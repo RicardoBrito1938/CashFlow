@@ -251,7 +251,6 @@ C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\bin\Debug\net9.0\System.C
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\bin\Debug\net9.0\System.Composition.TypedParts.dll
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\bin\Debug\net9.0\System.IO.Packaging.dll
-C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\bin\Debug\net9.0\System.Text.Json.dll
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -329,6 +328,7 @@ C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\bin\Debug\net9.0\CashFlow
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\bin\Debug\net9.0\CashFlow.Domain.pdb
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\bin\Debug\net9.0\pt-BR\CashFlow.Exception.resources.dll
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\CashFlow.Api.csproj.AssemblyReference.cache
+C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\rpswa.dswa.cache.json
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\CashFlow.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\CashFlow.Api.AssemblyInfoInputs.cache
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\CashFlow.Api.AssemblyInfo.cs
@@ -336,6 +336,9 @@ C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\CashFlow
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\CashFlow.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\CashFlow.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\CashFlow.Api.sourcelink.json
+C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\scopedcss\bundle\CashFlow.Api.styles.css
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Ricar\RiderProjects\CashFlow\src\CashFlow.Api\obj\Debug\net9.0\staticwebassets.build.json.cache

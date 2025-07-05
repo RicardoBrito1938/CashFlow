@@ -10,10 +10,15 @@ using WebApi.Test.InlineData;
 
 namespace WebApi.Test.Expenses.Register;
 
-public class RegisterExpenseTest(CustomWebApplicationFactory factory): CashFlowClassFixture(factory)
+public class RegisterExpenseTest: CashFlowClassFixture
 {
     private const string Method = "api/Expenses";
-    private readonly string _token = factory.GetToken();
+    private readonly string _token;
+    
+    public RegisterExpenseTest(CustomWebApplicationFactory factory) : base(factory)
+    {
+        _token = factory.GetToken();
+    }
     
     [Fact]
     private async Task Success()

@@ -11,12 +11,20 @@ using WebApi.Test.InlineData;
 
 namespace WebApi.Test.Login.DoLogin;
 
-public class DoLoginTest(CustomWebApplicationFactory factory): CashFlowClassFixture(factory)
+public class DoLoginTest: CashFlowClassFixture
 {
     private const string Method = "api/Login";
-    private readonly string  _email = factory.GetEmail();
-    private readonly string _name = factory.GetName();
-    private readonly string _password = factory.GetPassword();
+    private readonly string _email;
+    private readonly string _name;
+    private readonly string _password;
+
+
+    public DoLoginTest(CustomWebApplicationFactory factory) : base(factory)
+    {
+        _email = factory.GetEmail();
+        _name = factory.GetName();
+        _password = factory.GetPassword();
+    }
     
     [Fact]
     public async Task Success()

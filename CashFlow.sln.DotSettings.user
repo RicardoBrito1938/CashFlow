@@ -68,6 +68,8 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests.Error_EmailRequired&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Register.RegisterUserValidatorTests.Error_Name_Required&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Login.DoLogin.DoLoginTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Users.Register.RegisterUserTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f7534e78_002Daef6_002D494a_002D89c3_002Ddac5e224ed4d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
