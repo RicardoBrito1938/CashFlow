@@ -14,6 +14,7 @@ public class ExpenseReadOnlyRepositoryBuilder
     return this;
   }
   
+  
 public ExpenseReadOnlyRepositoryBuilder GetById(User user, Expense? expense)
   {
     
@@ -23,8 +24,14 @@ public ExpenseReadOnlyRepositoryBuilder GetById(User user, Expense? expense)
       .ReturnsAsync(expense);
     return this;
   }
-  
-  public IExpensesReadOnlyRepository Build()
+
+public ExpenseReadOnlyRepositoryBuilder FilterByMonth(User user, List<Expense> expenses)
+ {
+   _repository.Setup(expenseReadOnlyRepository => expenseReadOnlyRepository.FilterByMonth(user, It.IsAny<DateOnly>())).ReturnsAsync(expenses);
+    return this;
+ }
+
+public IExpensesReadOnlyRepository Build()
   {
     return _repository.Object;
   }
