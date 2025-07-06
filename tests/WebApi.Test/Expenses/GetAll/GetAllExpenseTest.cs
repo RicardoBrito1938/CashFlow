@@ -18,7 +18,9 @@ public class GetAllExpenseTest: CashFlowClassFixture
     public async Task Success()
     {
         var result = await DoGet(requestUri: Method, token: _token, language:"pt-BR");
-        result.StatusCode.ShouldBe(HttpStatusCode.NoContent);
+        result.StatusCode.ShouldBe(HttpStatusCode.OK);
+        var body = await result.Content.ReadAsStreamAsync();
+        var response = await JsonDocument.ParseAsync(body);
+        response.RootElement.GetProperty("expenses").GetArrayLength().ShouldBeGreaterThan(0);
     }
-    
 }
