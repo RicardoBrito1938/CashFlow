@@ -36,4 +36,22 @@ public class GenerateExpenseReportsTest: CashFlowClassFixture
         var body = await result.Content.ReadAsStreamAsync();
         body.ShouldNotBeNull();
     }
+    
+    [Fact]
+    private async Task Error_Forbidden()
+    {
+        var result = await DoGet(requestUri: $"{Method}/pdf?month={_expenseDate:Y}", token: _userToken);
+        result.StatusCode.ShouldBe(System.Net.HttpStatusCode.Forbidden);
+        var body = await result.Content.ReadAsStreamAsync();
+        body.ShouldNotBeNull();
+    }
+    
+    [Fact]
+    private async Task Error_Bad_Request()
+    {
+        var result = await DoGet(requestUri: $"{Method}/pdf?month=2023-13", token: _adminToken);
+        result.StatusCode.ShouldBe(System.Net.HttpStatusCode.BadRequest);
+        var body = await result.Content.ReadAsStreamAsync();
+        body.ShouldNotBeNull();
+    }
 }
