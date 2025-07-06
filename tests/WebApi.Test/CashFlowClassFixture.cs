@@ -23,6 +23,14 @@ public class CashFlowClassFixture(CustomWebApplicationFactory factory): IClassFi
         return await _client.GetAsync(requestUri);
     }
     
+    protected async Task<HttpResponseMessage> DoPut(string requestUri, object request, string token = "", string language = "")
+    {
+        AuthorizeRequest(token);
+        SetLanguage(language);
+        
+        return await _client.PutAsJsonAsync(requestUri, request);
+    }
+    
     protected async Task<HttpResponseMessage> DoDelete(string requestUri, string token, string language = "")
     {
         AuthorizeRequest(token);
