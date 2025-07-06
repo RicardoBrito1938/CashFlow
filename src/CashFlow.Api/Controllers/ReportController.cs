@@ -15,7 +15,7 @@ public class ReportController: ControllerBase
     [HttpGet("excel")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
-    public async Task<IActionResult> GetExcel([FromHeader] DateOnly month, [FromServices]IGeneratedExpensesReportExcelUseCase useCase)
+    public async Task<IActionResult> GetExcel([FromQuery] DateOnly month, [FromServices]IGeneratedExpensesReportExcelUseCase useCase)
     {
         byte[] fileContents = await useCase.Execute(month);
         if(fileContents.Length == 0)return NoContent();
@@ -25,7 +25,7 @@ public class ReportController: ControllerBase
     [HttpGet("pdf")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
-    public async Task<IActionResult> GetPdf([FromHeader] DateOnly month, [FromServices] IGenerateExpensesReportPdfUseCase useCase)
+    public async Task<IActionResult> GetPdf([FromQuery] DateOnly month, [FromServices] IGenerateExpensesReportPdfUseCase useCase)
     {
         byte[] fileContents = await useCase.Execute(month);
         if(fileContents.Length == 0)return NoContent();
