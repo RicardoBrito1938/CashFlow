@@ -95,6 +95,9 @@
     &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Expenses.Reports.Excel.GenerateExpenseReportPdfUseCaseTest.Success&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Expenses.Reports.Excel.GenerateExpenseReportsTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.Profile.GetUserProfileUseCaseTest.Success_Get_User_Profile&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.Profile.GetUserProfileUseCaseTest.Error_User_Not_Found&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Users.Profile.GetUserProfileTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.Profile.GetUserProfileUseCaseTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Miscellaneous_0020Files_002FHunitis/@EntryIndexedValue">False</s:Boolean>

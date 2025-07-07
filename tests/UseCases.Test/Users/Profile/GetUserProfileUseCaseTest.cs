@@ -1,5 +1,6 @@
 ﻿using CashFlow.Application.UseCases.Users.Porfile;
 using CashFlow.Domain.Entities;
+using CashFlow.Exception.ExceptionsBase;
 using CommonTestUtils.Entities;
 using CommonTestUtils.LoggedUser;
 using CommonTestUtils.Mapper;
@@ -20,7 +21,7 @@ public class GetUserProfileUseCaseTest
       response.Name.ShouldBe(user.Name);
       response.Email.ShouldBe(user.Email);
    }
-
+   
 
    private GetUserProfileUseCase CreateUseCase(User user)
    {
