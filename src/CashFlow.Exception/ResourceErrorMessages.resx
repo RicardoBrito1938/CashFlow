@@ -60,4 +60,7 @@
     <data name="PASSWORD_OR_EMAIL_INVALID" xml:space="preserve">
         <value>Invalid e-mail or password</value>
     </data>
+    <data name="PASSWORD_MUST_MATCH" xml:space="preserve">
+        <value>Passwords must match</value>
+    </data>
 </root>
