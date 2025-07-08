@@ -77,6 +77,8 @@
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Update.UpdateUserValidatorTest.Success&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Update.UpdateUserValidatorTest.Fail_Name_Empty&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Users.Update.UpdateUserValidatorTest.Fail_Email_Empty&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.Update.UpdateUserUseCaseTest.UpdateUserProfile_Success&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.Update.UpdateUserUseCaseTest.Error_Name_Empty&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f7534e78_002Daef6_002D494a_002D89c3_002Ddac5e224ed4d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
