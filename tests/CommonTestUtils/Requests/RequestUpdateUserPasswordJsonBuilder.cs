@@ -9,6 +9,6 @@ public class RequestUpdateUserPasswordJsonBuilder
     {
         return new Faker<RequestUpdateUserPasswordJson>()
             .RuleFor(user => user.Password, f => f.Internet.Password())
-            .RuleFor(user => user.NewPassword, f => f.Internet.Password(Convert.ToInt32("!@#$%^&*()_+")));
+            .RuleFor(user => user.NewPassword, f => f.Internet.Password(prefix: "!Aa1"));
     }
 }
