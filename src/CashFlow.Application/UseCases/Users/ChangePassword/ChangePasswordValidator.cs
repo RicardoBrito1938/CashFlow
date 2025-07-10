@@ -7,7 +7,7 @@ public class UpdatePasswordValidator: AbstractValidator<RequestUpdateUserPasswor
 {
     public UpdatePasswordValidator()
     {
-        RuleFor(x => x.Password)
+        RuleFor(x => x.NewPassword)
             .SetValidator(new PasswordValidator<RequestUpdateUserPasswordJson>());
     }
 }

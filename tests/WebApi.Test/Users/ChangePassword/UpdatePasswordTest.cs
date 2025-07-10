@@ -26,5 +26,15 @@ public class UpdatePasswordTest:CashFlowClassFixture
          request.Password = _password;
          var response = await DoPut(Method, request,  _token);
          response.StatusCode.ShouldBe(HttpStatusCode.NoContent);
+         var loginRequest = new RequestLoginJson()
+         {
+             Email = _email,
+             Password = _password
+         };
+         response = await DoPost("api/login",loginRequest);
+         response.StatusCode.ShouldBe(HttpStatusCode.Unauthorized);
+         loginRequest.Password = request.NewPassword;
+         response = await DoPost("api/login", loginRequest);
+         response.StatusCode.ShouldBe(HttpStatusCode.OK);
      }
 }
