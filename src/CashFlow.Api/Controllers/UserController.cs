@@ -1,4 +1,5 @@
 using CashFlow.Application.UseCases.Users.ChangePassword;
+using CashFlow.Application.UseCases.Users.Delete;
 using CashFlow.Application.UseCases.Users.Porfile;
 using CashFlow.Application.UseCases.Users.Register;
 using CashFlow.Application.UseCases.Users.Update;
@@ -59,6 +60,17 @@ public class UserController: ControllerBase
         [FromBody] RequestUpdateUserPasswordJson request)
     {
         await useCase.Execute(request);
+        
+        return NoContent();
+    }
+    
+    [HttpDelete]
+    [Authorize]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public async Task<IActionResult> DeleteUser(
+        [FromServices] IDeleteUserUseCase useCase)
+    {
+        await useCase.Execute();
         
         return NoContent();
     }

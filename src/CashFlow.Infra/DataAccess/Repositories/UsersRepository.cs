@@ -23,6 +23,12 @@ public class UsersRepository(CashFlowDbContext dbContext) : IUsersReadOnlyReposi
        await dbContext.Users.AddAsync(user);
     }
 
+    public async Task Delete(User user)
+    {
+        var userToDelete = await dbContext.Users.FirstAsync(u => u.Id == user.Id);
+        dbContext.Users.Remove(userToDelete);
+    }
+
     public async Task<User> GetById(long id)
     {
         return await dbContext.Users.FirstAsync(user => user.Id == id);

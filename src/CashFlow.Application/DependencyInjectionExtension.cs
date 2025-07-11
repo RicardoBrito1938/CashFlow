@@ -9,6 +9,7 @@ using CashFlow.Application.UseCases.Expenses.Update;
 using CashFlow.Application.UseCases.Login;
 using CashFlow.Application.UseCases.Users;
 using CashFlow.Application.UseCases.Users.ChangePassword;
+using CashFlow.Application.UseCases.Users.Delete;
 using CashFlow.Application.UseCases.Users.Porfile;
 using CashFlow.Application.UseCases.Users.Register;
 using CashFlow.Application.UseCases.Users.Update;
@@ -44,5 +45,6 @@ public static class DependencyInjectionExtension
         services.AddScoped<IGetUserProfileUseCase, GetUserProfileUseCase>();
         services.AddScoped<IUpdateUserProfileUseCase, UpdateUserProfileUseCase>();
         services.AddScoped<IUpdateUserPasswordUseCase, UpdateUserPasswordUseCase>();
+        services.AddScoped<IDeleteUserUseCase, DeleteUserUseCase>();
     }
 }
