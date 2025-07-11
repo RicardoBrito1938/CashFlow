@@ -45,7 +45,9 @@
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2d15e9fc_002D1e18_002D4d06_002D8a9f_002Dd2e8fe68b67f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Success #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Users.ChangePassword.UpdatePasswordTest.Success&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Users.ChangePassword.UpdatePasswordTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.Delete.DeleteUserAccountTest.Success&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Users.Delete.DeleteUserTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=44c95346_002D0686_002D4231_002D9abd_002D3ccf11f10749/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RegisterExpenseTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
