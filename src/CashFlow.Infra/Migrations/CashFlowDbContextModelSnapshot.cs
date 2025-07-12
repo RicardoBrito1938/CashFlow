@@ -56,6 +56,27 @@ namespace CashFlow.Infra.Migrations
                     b.ToTable("Expenses");
                 });
 
+            modelBuilder.Entity("CashFlow.Domain.Entities.Tag", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("ExpenseId")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("Value")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ExpenseId");
+
+                    b.ToTable("Tags", (string)null);
+                });
+
             modelBuilder.Entity("CashFlow.Domain.Entities.User", b =>
                 {
                     b.Property<long>("Id")
@@ -97,6 +118,22 @@ namespace CashFlow.Infra.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("CashFlow.Domain.Entities.Tag", b =>
+                {
+                    b.HasOne("CashFlow.Domain.Entities.Expense", "Expense")
+                        .WithMany("Tags")
+                        .HasForeignKey("ExpenseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Expense");
+                });
+
+            modelBuilder.Entity("CashFlow.Domain.Entities.Expense", b =>
+                {
+                    b.Navigation("Tags");
                 });
 #pragma warning restore 612, 618
         }
