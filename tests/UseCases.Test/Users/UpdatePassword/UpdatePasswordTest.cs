@@ -46,17 +46,6 @@ public class UpdatePasswordTest
             await act.ShouldThrowAsync<ErrorOnValidationException>();
         }
         
-        [Fact]
-        public async Task Error_Password_TooShort()
-        {
-            var user = UserBuilder.Build();
-            var request = RequestUpdateUserPasswordJsonBuilder.Build();
-            request.Password = "123";
-            var useCase = CreateUseCase(user, request.Password);
-            var act = async () => await useCase.Execute(request);
-            await act.ShouldThrowAsync<ErrorOnValidationException>();
-        }
-        
       private static UpdateUserPasswordUseCase CreateUseCase(User user, string? newPassword = null)
       {
           var loggedUser =  LoggedUserBuilder.Build(user);

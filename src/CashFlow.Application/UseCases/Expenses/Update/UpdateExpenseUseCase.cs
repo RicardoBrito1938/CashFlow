@@ -22,6 +22,7 @@ public class UpdateExpenseUseCase(
         var expense = await repository.GetById(loggedUserEntity,id);
         if (expense is null)
             throw new NotFoundException(ResourceErrorMessages.NOT_FOUND);
+        expense.Tags.Clear();
         mapper.Map(request, expense);
         repository.Update(expense);
         await unitOfWork.Commit();
