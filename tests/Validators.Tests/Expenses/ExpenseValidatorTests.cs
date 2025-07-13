@@ -4,7 +4,7 @@ using CashFlow.Exception;
 using CommonTestUtils.Requests;
 using Shouldly;
 
-namespace Validators.Tests.Expenses.Register;
+namespace Validators.Tests.Expenses;
 
 public class ExpenseValidatorTests
 {
@@ -90,5 +90,18 @@ public class ExpenseValidatorTests
         result.IsValid.ShouldBeFalse();
         result.Errors.Count.ShouldBe(1);
         result.Errors[0].ErrorMessage.ShouldBe(ResourceErrorMessages.TITLE_REQUIRED);
+    }
+
+    [Fact]
+    public void Error_Tag_Invalid()
+    {
+        var validator = new ExpenseValidator();
+        var request = RequestExpenseJsonBuilder.Build();
+        request.Tags = new List<Tag> { (Tag)999 }; // Invalid enum value
+        var result = validator.Validate(request);
+        result.IsValid.ShouldBeFalse();
+        result.Errors.Count.ShouldBe(1);
+        result.Errors[0].ErrorMessage.ShouldBe(ResourceErrorMessages.TAG_TYPE_NOT_SUPPORTED);
+        
     }
 }

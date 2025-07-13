@@ -7,12 +7,13 @@ namespace CommonTestUtils.Requests;
 public class RequestExpenseJsonBuilder
 {
     public static RequestExpenseJson Build()
-    { 
+    {
         return new Faker<RequestExpenseJson>()
-            .RuleFor(rule => rule.Title,faker => faker.Commerce.ProductName())
-            .RuleFor(rule => rule.Description,faker => faker.Commerce.ProductDescription())
-            .RuleFor(rule => rule.Date,faker => faker.Date.Past(1)) // Date in the past
-            .RuleFor(rule => rule.Amount,faker => faker.Finance.Amount(1, 1000))
-            .RuleFor(rule => rule.PaymentType,faker => faker.PickRandom<PaymentType>());
+            .RuleFor(rule => rule.Title, faker => faker.Commerce.ProductName())
+            .RuleFor(rule => rule.Description, faker => faker.Commerce.ProductDescription())
+            .RuleFor(rule => rule.Date, faker => faker.Date.Past(1)) // Date in the past
+            .RuleFor(rule => rule.Amount, faker => faker.Finance.Amount(1, 1000))
+            .RuleFor(rule => rule.PaymentType, faker => faker.PickRandom<PaymentType>())
+            .RuleFor(rule => rule.Tags, faker => faker.Make(1, faker.PickRandom<Tag>));
     }
 }
