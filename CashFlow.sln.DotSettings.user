@@ -167,6 +167,7 @@
     &lt;TestId&gt;xUnit::1C9691AD-0A6C-49EB-8FB8-B1B7D1CA8433::net9.0::UseCases.Test.Users.UpdatePassword.UpdatePasswordTest+UpdatePasswordValidatorTest.Error_Password_TooShort&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Users.ChangePassword.UpdatePasswordTest.Success&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BC026D8B-C384-49E3-A504-56063B3D8C0F::net9.0::WebApi.Test.Users.ChangePassword.UpdatePasswordTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8699C1A7-83E0-4658-9171-2048DF917475::net9.0::Validators.Tests.Expenses.ExpenseValidatorTests.Error_Tag_Invalid&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Miscellaneous_0020Files_002FHunitis/@EntryIndexedValue">False</s:Boolean>
