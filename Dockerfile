@@ -1,14 +1,16 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build-env
 WORKDIR /app
 
-COPY src/ .
+# ✅ Copy the whole repo: includes .sln and src/
+COPY . .
 
-WORKDIR /app/Cashflow.Api
+# ✅ Restore using the solution file
+RUN dotnet restore CashFlow.sln
 
-RUN dotnet restore
+# ✅ Publish only the API project
+RUN dotnet publish src/CashFlow.Api/CashFlow.Api.csproj -c Release -o /app/out
 
-RUN dotnet publish -c Release -o /app/out
-
+# ---- Runtime stage ----
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
 
